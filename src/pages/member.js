@@ -11,23 +11,27 @@ import chatgpt from "@images/takina.jpg";
 const members = [
   {
     title: "syamaguc",
+    subtitle: "CEO, Programmer, Data scientist",
     desc: "Miracle Cute Programmer, Genius Data scientist, Famous Spaghetti coder and Bitcoin maximalist",
-    img_top: me,
+    img: me,
   },
   {
-    title: "Neovim",
-    desc: "Editing staff, Free",
-    img_bottom: neovim,
+    title: "Neo vim",
+    subtitle: "Editor",
+    desc: "My friends.",
+    img: neovim,
   },
   {
-    title: "DeepL",
-    desc: "Translation staff, 750yen/month",
-    img_top: deepl,
+    title: "Deep L",
+    subtitle: "Translator",
+    desc: "￥750/month",
+    img: deepl,
   },
   {
-    title: "ChatGPT",
-    desc: "Bull shit jobs staff, $20/month",
-    img_bottom: chatgpt,
+    title: "Chat GPT",
+    subtitle: "Creative Designer",
+    desc: "$20/month bull shit job staff.",
+    img: chatgpt,
   },
 ];
 
@@ -49,9 +53,9 @@ const Member = () => {
               <Card
                 key={index}
                 title={card.title}
+                subtitle={card.subtitle}
                 desc={card.desc}
-                img_top={card.img_top}
-                img_bottom={card.img_bottom}
+                img={card.img}
               />
             ))}
           </div>

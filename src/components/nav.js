@@ -23,7 +23,12 @@ const Nav = ({}) => (
               <a href="/member/">Member</a>
             </li>
             <li>
-              <a href="#">GitHub</a>
+              <a
+                href="https://github.com/MountainMouth-Inc/gatsby-lycoris"
+                target="_blank"
+              >
+                GitHub
+              </a>
             </li>
           </ul>
         </div>

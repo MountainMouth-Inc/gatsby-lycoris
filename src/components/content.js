@@ -2,23 +2,23 @@ import React from "react";
 
 import SectionHeader from "@components/section-header.js";
 
-const Content = (children) => (
-  <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
-    <SectionHeader title={children.title} desc={children.desc} />
+const Content = ({ content }) => (
+  <div style={{ padding: "0.1rem 0.1rem", textAlign: "center" }}>
+    <SectionHeader title={content.title} desc={content.desc} />
     <content
       style={{
         display: "grid",
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: "stretch",
+        justifyContent: "space-evenly",
         gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
       }}
     >
       <div>
-        <h3>{children.h3}</h3>
-        <p style={{ color: "var(--primary)" }}>{children.p}</p>
+        <h3>{content.h3}</h3>
+        <p style={{ color: "var(--primary)" }}>{content.p}</p>
       </div>
       <div>
-        <img src={children.img} alt="img" />
+        <img src={content.img} alt="img" />
       </div>
     </content>
   </div>

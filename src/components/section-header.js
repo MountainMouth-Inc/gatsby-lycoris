@@ -1,9 +1,9 @@
 import React from "react";
 
-const SectionHeader = (children) => (
+const SectionHeader = ({ title, desc }) => (
   <>
-    <h2>{children.title}</h2>
-    <p style={{ color: "var(--primary)" }}>{children.desc}</p>
+    <h2>{title}</h2>
+    <p style={{ color: "var(--primary)" }}>{desc}</p>
   </>
 );
 

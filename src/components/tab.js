@@ -1,27 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import Content from "@components/content.js";
 
-const Tab = ({ contents }) => (
-  <div class="row flex-spaces tabs">
-    {contents.map((content, index) => (
-      <>
-        <input id={index} type="radio" name="tabs" />
-        <label for={index}>{index}</label>
-      </>
-    ))}
+const Tab = ({ children }) => {
+  const [activeTab, setActiveTab] = useState(0);
 
-    {contents.map((content, index) => (
-      <div class="content" id={index}>
-        <Content
-          title={content.title}
-          desc={content.desc}
-          img={content.img}
-          h3={content.h3}
-          p={content.p}
-        />
+  return (
+    <div>
+      <h2 align="center">Our Solutions</h2>
+      <div className="row flex-spaces tabs">
+        {children.map((child, idx) => (
+          <React.Fragment key={idx}>
+            <input
+              id={idx}
+              type="radio"
+              name="tabs"
+              checked={idx === activeTab}
+              onChange={() => setActiveTab(idx)}
+            />
+            <label htmlFor={idx}>{child.label}</label>
+          </React.Fragment>
+        ))}
+
+        {children.map((child, idx) => (
+          <div
+            key={idx}
+            className="content"
+            style={{ display: idx === activeTab ? "block" : "none" }}
+          >
+            <Content content={child} />
+          </div>
+        ))}
       </div>
-    ))}
-  </div>
-);
+    </div>
+  );
+};
 
 export default Tab;

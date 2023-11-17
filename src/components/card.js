@@ -1,18 +1,17 @@
 import React from "react";
 
-const Card = (children) => (
+const Card = ({ title, subtitle, desc, img }) => (
   <div className="sm-3 col align-middle">
     <div
       class="card"
       style={{ width: 20 + "rem", backgroundColor: "var(--white)" }}
     >
-      {children.img_top && <img src={children.img_top} />}
+      <img src={img} />
       <div class="card-body">
-        <h4 class="card-title">{children.title}</h4>
-        {children.subtitle && <h5 class="card-subtitle"></h5>}
-        <p class="card-text">{children.desc}</p>
+        <h4 class="card-title">{title}</h4>
+        <h5 class="card-subtitle">{subtitle}</h5>
+        <p class="card-text">{desc}</p>
       </div>
-      {children.img_bottom && <img src={children.img_bottom} />}
     </div>
   </div>
 );

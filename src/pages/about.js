@@ -3,43 +3,50 @@ import React from "react";
 import Layout from "@components/layout.js";
 import Background from "@components/background.js";
 import Container from "@components/container.js";
-import Content from "@components/content.js";
 import Tab from "@components/tab.js";
 
-import chisato from "@images/takina.jpg";
-import me from "@images/chisato-red.jpg";
-import neovim from "@images/chisato-white.jpg";
-import deepl from "@images/chisato-black.jpg";
-import chatgpt from "@images/takina.jpg";
+import darkred from "@images/chisato-darkred.jpg";
+import green from "@images/chisato-green.jpg";
+import beige from "@images/chisato-beige.jpg";
+import bluesky from "@images/chisato-bluesky.jpg";
 
 const contents = [
   {
-    title: "syamaguc",
-    desc: "Miracle Cute Programmer, Genius Data scientist, Famous Spaghetti coder and Bitcoin maximalist",
-    img: me,
-    h3: "",
-    p: "",
+    label: "Web Development",
+    title: "Full stack Support",
+    desc: "We can provide full stack solutions for web development, from front-end to back-end and infrastructure.",
+    h3: "Experience",
+    p: `Next, Gatsby, Astro, Hugo, Svelte...,
+        Nestjs, FastAPI, Django...,
+        Python, Node, C/C++, Go...,
+        AWS, GCP ... etc`,
+    img: bluesky,
   },
   {
-    title: "Neovim",
-    desc: "Editing staff, Free",
-    img: neovim,
-    h3: "",
-    p: "",
+    label: "Data Science",
+    title: "Data Science All in One",
+    desc: "Analyze/utilize existing data, collect data through scraping, build data analysis infrastructure.",
+    h3: "Projects",
+    p: `Building a growth hack infrastructure for a matching app, 
+        Construction of a system to determine abandoned farmland using satellite imagery,
+        Creation of horse racing AI ... etc`,
+    img: beige,
   },
   {
-    title: "DeepL",
-    desc: "Translation staff, 750yen/month",
-    img: deepl,
-    h3: "",
-    p: "",
+    label: "DX Consulting",
+    title: "Let python do the boring stuff.",
+    desc: "",
+    h3: "Projects",
+    p: "Support for accounting firms , real estate companies ... etc",
+    img: green,
   },
   {
-    title: "ChatGPT",
-    desc: "Bull shit jobs staff, $20/month",
-    img: chatgpt,
-    h3: "",
-    p: "",
+    label: "Marketing",
+    title: "Why does strategy make a difference?",
+    desc: "",
+    h3: "Projects",
+    p: "Job search site, Matching App ... etc",
+    img: darkred,
   },
 ];
 
@@ -47,7 +54,7 @@ const About = () => (
   <Layout>
     <Background>
       <Container>
-        <Tab contents={contents} />
+        <Tab children={contents} />
       </Container>
     </Background>
   </Layout>
