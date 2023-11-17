@@ -1,11 +1,17 @@
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
 module.exports = {
   siteMetadata: {
-    title: `homepage`,
+    title: `Lycoris`,
+    author: {
+      name: `syamaguc`,
+      summary: `Miracle cute programmer`,
+    },
+    description: `Gatsby landing page template inspired by "Lycoris Recoil"`,
     siteUrl: `https://mountainmouth.xyz`,
+    social: {
+      twitter: `syamaguc`,
+    },
   },
+
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
@@ -18,6 +24,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
+    `gatsby-plugin-react-helmet`,
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -37,4 +44,3 @@ module.exports = {
     },
   ],
 };
-

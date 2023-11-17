@@ -1,9 +1,10 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-import headerImage from "../images/chisato-red.jpg";
-import mainImage from "../images/chisato-red.jpg";
-import Paper from "../components/paper";
+import headerImage from "@images/chisato-bluesky.jpg";
+import mainImage from "@images/chisato-red.jpg";
+import Paper from "@components/paper.js";
+
+import "../styles/font.css";
 
 const Header = ({ siteTitle }) => (
   <div
@@ -11,42 +12,28 @@ const Header = ({ siteTitle }) => (
       display: "flex",
       alignItems: "center",
       flexDirection: "column",
-      padding: "4rem 1rem",
+      padding: "8rem 1rem",
     }}
   >
     <div
       style={{
-        backgroundImage: `url(${headerImage})`,
+        backgroundImage: `url(${mainImage})`,
         position: "absolute",
         top: 0,
         zIndex: -5,
-        height: "100vh",
-        width: "100vw",
+        height: "110vh",
+        width: "110vw",
         opacity: 0.5,
       }}
     />
     <Paper>
-      <h1 style={{ textAlign: "center" }}>Landing Page Starter</h1>
-      <p style={{ textAlign: "center" }}>
-        This landing page looks great on all devices and is minimal in design.
-        Add what you want and deploy.
-      </p>
-      <div style={{ textAlign: "center" }}>
-        <button>Call to action</button>
-      </div>
+      <h2 style={{ textAlign: "center" }}>Mountain Mouth</h2>
+      <p style={{ textAlign: "center" }}>development agency</p>
       <div style={{ margin: 60, position: "relative" }}>
-        <img src={mainImage} alt="Some content" />
+        <img src={mainImage} alt="chisato" />
       </div>
     </Paper>
   </div>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;

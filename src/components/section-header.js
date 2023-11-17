@@ -1,12 +1,10 @@
-import React from "react"
+import React from "react";
 
-import { COLORS } from "../styles/constants"
-
-const SectionHeader = ({ title, description }) => (
+const SectionHeader = (children) => (
   <>
-    <h2>{title}</h2>
-    <p style={{ color: COLORS.mediumGray }}>{description}</p>
+    <h2>{children.title}</h2>
+    <p style={{ color: "var(--primary)" }}>{children.desc}</p>
   </>
-)
+);
 
-export default SectionHeader
+export default SectionHeader;

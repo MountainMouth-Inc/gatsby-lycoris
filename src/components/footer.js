@@ -1,47 +1,23 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-import { COLORS } from "../styles/constants";
-
-const Footer = ({ siteTitle }) => (
+const Footer = () => (
   <footer
     style={{
-      padding: "1rem",
-      backgroundColor: COLORS.lightGray,
+      backgroundColor: "var(--primary-light)",
+      position: "fixed",
+      bottom: 0,
+      width: "100%",
+      height: "50px",
     }}
   >
-    <div
-      style={{
-        display: "grid",
-        alignItems: "center",
-        justifyContent: "space-between",
-        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 240px))",
-        padding: "1rem 2rem",
-        fontSize: ".85rem",
-      }}
-    >
-      <div style={{ color: COLORS.blue, fontWeight: 700 }}>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://github.com/MountainMouth-Inc/gatsby-lycoris"
-        >
-          Contact Us
-        </a>
-      </div>
-      <div style={{ color: COLORS.gray }}>
+    <div class="row">
+      <div class="col-10 col"></div>
+      <div class="col-2 col">
         © {new Date().getFullYear()}
         {` `}Nullius in verba
       </div>
     </div>
   </footer>
 );
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Footer.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Footer;

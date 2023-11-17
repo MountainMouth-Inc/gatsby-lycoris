@@ -1,15 +1,10 @@
 import React from "react";
 
-import feature from "../images/chisato-red.jpg";
-import SectionHeader from "./section-header";
-import { COLORS } from "../styles/constants";
+import SectionHeader from "@components/section-header.js";
 
-const Content = () => (
+const Content = (children) => (
   <div style={{ padding: "4rem 1rem", textAlign: "center" }}>
-    <SectionHeader
-      title="Minimal Features"
-      description="Don't spend time ripping out unneeded plugins and bloat."
-    />
+    <SectionHeader title={children.title} desc={children.desc} />
     <content
       style={{
         display: "grid",
@@ -19,14 +14,11 @@ const Content = () => (
       }}
     >
       <div>
-        <h3>What you need to Start</h3>
-        <p style={{ color: COLORS.gray }}>
-          Includes plugins for analytics, building sitemaps, and optimizing
-          images
-        </p>
+        <h3>{children.h3}</h3>
+        <p style={{ color: "var(--primary)" }}>{children.p}</p>
       </div>
       <div>
-        <img src={feature} alt="a blank card floating over colorful graphics" />
+        <img src={children.img} alt="img" />
       </div>
     </content>
   </div>
