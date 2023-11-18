@@ -1,40 +1,58 @@
 import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
 
-const Nav = ({}) => (
-  <div styles={{ position: "fixed" }}>
+const Nav = ({}) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          social {
+            twitter
+          }
+        }
+      }
+      allSitePage(
+        filter: {
+          path: { nin: ["/", "/dev-404-page/", "/404/", "/404.html", "/dev/"] }
+        }
+      ) {
+        edges {
+          node {
+            path
+          }
+        }
+      }
+    }
+  `);
+
+  return (
     <nav class="border fixed split-nav">
       <div class="nav-brand">
         <h3>
-          <a href="/">Mountain Mouth</a>
+          <a href="/">{data.site.siteMetadata.title}</a>
         </h3>
       </div>
       <div class="collapsible">
-        <label for="collapsible">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+        <input id="collapsible1" type="checkbox" name="collapsible1" />
+
+        <label for="collapsible1">
+          {data.allSitePage.edges.map(({ node }, index) => (
+            <div class={`bar${index}`}></div>
+          ))}
         </label>
         <div class="collapsible-body">
           <ul class="inline">
-            <li>
-              <a href="/about/">About</a>
-            </li>
-            <li>
-              <a href="/member/">Member</a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/MountainMouth-Inc/gatsby-lycoris"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </li>
+            {data.allSitePage.edges.map(({ node }, index) => (
+              <li>
+                <a href={node.path}>{node.path.slice(1, -1)}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
     </nav>
-  </div>
-);
+  );
+};
 
 export default Nav;

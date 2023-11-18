@@ -6,7 +6,6 @@ const Tab = ({ children }) => {
 
   return (
     <div>
-      <h2 align="center">Our Solutions</h2>
       <div className="row flex-spaces tabs">
         {children.map((child, idx) => (
           <React.Fragment key={idx}>

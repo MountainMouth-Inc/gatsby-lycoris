@@ -2,17 +2,22 @@ import React from "react";
 
 import Layout from "@components/layout.js";
 import Background from "@components/background.js";
-import Container from "@components/container.js";
-import Welcome from "@components/welcome.js";
+import Nav from "@components/nav.js";
+import Hero from "@components/hero.js";
+import Seo from "@components/seo.js";
 
 const Index = () => (
   <Layout>
     <Background>
-      <Container>
-        <Welcome />
-      </Container>
+      <Nav />
+      <Hero
+        title="Mountain Mouth Co., Ltd."
+        desc="Talk is cheap, show me the code."
+      />
     </Background>
   </Layout>
 );
+
+export const Head = () => <Seo title="Home"></Seo>;
 
 export default Index;

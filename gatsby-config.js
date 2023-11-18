@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Lycoris`,
+    title: `Mountain Mouth`,
     author: {
       name: `syamaguc`,
       summary: `Miracle cute programmer`,
@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "static/icon.png",
       },
     },
     "gatsby-plugin-mdx",
@@ -30,17 +30,15 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
-      __key: "images",
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages/`,
       },
-      __key: "pages",
     },
   ],
 };

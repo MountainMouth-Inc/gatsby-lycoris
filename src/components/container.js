@@ -1,14 +1,14 @@
 import React from "react";
-import "@styles/paper.css";
 
 const Container = ({ children }) => (
   <div
     style={{
       display: "flex",
       alignItems: "center",
+      justifyContent: "center",
       flexDirection: "column",
       /*padding up right down left*/
-      padding: "7rem 0.1rem 7rem 0.1rem",
+      padding: "4rem 0rem 0rem 0rem",
     }}
   >
     <div className="paper container">{children}</div>
