@@ -13,6 +13,7 @@ module.exports = {
   },
 
   plugins: [
+    `gatsby-plugin-preact`,
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {
@@ -46,6 +47,22 @@ module.exports = {
         trackingIds: [
           "G-J51B0TWW9Q", // Google Analytics / GA
         ],
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://mountainmouth.xyz`,
+        stripQueryString: true,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: `https://mountainmouth.xyz`,
       },
     },
   ],
