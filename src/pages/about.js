@@ -15,9 +15,9 @@ const About = () => (
           <h1 class="article-title">
             <a href="">About</a>
           </h1>
-          <p>Make programer great again, Yes we can.</p>
-          <p class="text-lead">Name : MountainMouth ⛰️</p>
-          <p class="text-lead">Location : Tokyo, JP 🗾</p>
+          <p>Easy does it, time will tell.</p>
+          <p class="text-lead">Name : MountainMouth⛰️</p>
+          <p class="text-lead">Location : Tokyo, JP🗾</p>
           <p class="text-lead">
             Business : <a href="/business/"> here ◀️</a>
           </p>

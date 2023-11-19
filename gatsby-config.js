@@ -5,7 +5,7 @@ module.exports = {
       name: `syamaguc`,
       summary: `Miracle cute programmer`,
     },
-    description: `Gatsby landing page template inspired by "Lycoris Recoil"`,
+    description: `MountainMouth homepage inspired by my favorite anime "Lycoris Recoil"`,
     siteUrl: `https://mountainmouth.xyz`,
     social: {
       twitter: `syamaguc`,
@@ -24,7 +24,6 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
-    `gatsby-plugin-react-helmet`,
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
@@ -38,6 +37,15 @@ module.exports = {
       options: {
         name: "pages",
         path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-J51B0TWW9Q", // Google Analytics / GA
+        ],
       },
     },
   ],
