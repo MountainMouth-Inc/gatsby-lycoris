@@ -13,7 +13,8 @@ module.exports = {
   },
 
   plugins: [
-    `gatsby-plugin-preact`,
+    //NOTE: build errorのため一旦コメントアウト
+    //`gatsby-plugin-preact`,
     "gatsby-plugin-image",
     "gatsby-plugin-sitemap",
     {

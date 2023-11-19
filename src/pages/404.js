@@ -2,24 +2,14 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 const pageStyles = {
-  color: "#232129",
   padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
 };
 
-const paragraphStyles = {
-  marginBottom: 48,
-};
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
   backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
+  fontSize: "1.5rem",
   borderRadius: 4,
 };
 
@@ -27,8 +17,8 @@ const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
       <dir class="paper container">
-        <h1 style={headingStyles}>Page not found</h1>
-        <p style={paragraphStyles}>
+        <h1 class="text-danger">Page not found</h1>
+        <p class="text-lead">
           Sorry 😔, we couldn’t find what you were looking for.
           <br />
           {process.env.NODE_ENV === "development" ? (
@@ -39,7 +29,9 @@ const NotFoundPage = () => {
             </>
           ) : null}
           <br />
-          <Link to="/">Go home</Link>.
+          <h4>
+            <Link to="/">Go home</Link>.
+          </h4>
         </p>
       </dir>
     </main>
