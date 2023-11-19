@@ -4,7 +4,7 @@ import Background from "@components/background.js";
 import Card from "@components/card.js";
 import Seo from "@components/seo.js";
 import Nav from "@components/nav.js";
-import { members } from "@constants/constants.js";
+import { members } from "@constants/members.js";
 
 const Member = () => {
   return (
@@ -13,7 +13,7 @@ const Member = () => {
         <Nav />
         <div
           style={{
-            padding: "5rem 0rem 5rem 0rem",
+            padding: "7rem 0rem 0rem 0rem",
           }}
         />
         <div className="row flex-spaces child-shadows-hover">
@@ -27,6 +27,11 @@ const Member = () => {
             />
           ))}
         </div>
+        <div
+          style={{
+            padding: "0rem 0rem 7rem 0rem",
+          }}
+        />
       </Background>
     </Layout>
   );

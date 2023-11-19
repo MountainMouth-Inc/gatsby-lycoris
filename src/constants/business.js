@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const contents = [
+export const business = [
   {
     label: "Web Development",
     title: "Full stack Support",
@@ -15,7 +15,7 @@ export const contents = [
         }}
       >
         <div>
-          <h3>preference</h3>
+          <p>I usually use</p>
           <table>
             <thead>
               <tr>
@@ -64,7 +64,7 @@ export const contents = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/82720bdd6383b5495c610d71c241244a.png"
+            src="https://i.gyazo.com/48259abc13210869d504c2fd762c5075.jpg"
             alt="img"
           />
         </div>
@@ -98,7 +98,7 @@ export const contents = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/cd758f1a2c1aa64312f01eb2c16be73c.jpg"
+            src="https://i.gyazo.com/95af560edfa1d9146236fba3392d778d.jpg"
             alt="img"
           />
         </div>
@@ -107,8 +107,8 @@ export const contents = [
   },
   {
     label: "DX Consulting",
-    title: "Let python do the boring stuff",
-    desc: "",
+    desc: "Let python do the boring stuff",
+    title: "Automation is justice",
     body: (
       <content
         style={{
@@ -132,7 +132,7 @@ export const contents = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/48259abc13210869d504c2fd762c5075.jpg"
+            src="https://i.gyazo.com/a42fc1b84e01ac37cb1864815a19bab1.jpg"
             alt="img"
           />
         </div>
@@ -141,8 +141,8 @@ export const contents = [
   },
   {
     label: "Marketing",
-    title: "Why does strategy make a difference?",
-    desc: "",
+    title: "Strategy & Execution >>> Tactics",
+    desc: "Why does strategy make a difference? I was Head of marketing for Job search site, $1M Monthly budget",
     body: (
       <content
         style={{
@@ -153,9 +153,6 @@ export const contents = [
         }}
       >
         <div>
-          <p>
-            I was Head of marketing for Job search site, 100M yen Monthly budget
-          </p>
           <table>
             <thead>
               <tr>
@@ -199,38 +196,11 @@ export const contents = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/592b20ed6e528312b274dce282d93ed8.png"
+            src="https://i.gyazo.com/47efa69e32a3a2f37f8757a2748c1ee8.jpg"
             alt="img"
           />
         </div>
       </content>
     ),
-  },
-];
-
-export const members = [
-  {
-    title: "syamaguc",
-    subtitle: "CEO",
-    desc: "Miracle Cute Programmer & Data scientist",
-    img: "https://i.gyazo.com/82720bdd6383b5495c610d71c241244a.png",
-  },
-  {
-    title: "Neo vim",
-    subtitle: "Editor",
-    desc: "Free, ",
-    img: "https://i.gyazo.com/cd758f1a2c1aa64312f01eb2c16be73c.jpg",
-  },
-  {
-    title: "Deep L",
-    subtitle: "Translator",
-    desc: "￥750/month, so expensive.",
-    img: "https://i.gyazo.com/48259abc13210869d504c2fd762c5075.jpg",
-  },
-  {
-    title: "Chat GPT",
-    subtitle: "Creative Designer",
-    desc: "$20/month, bull shit job staff.",
-    img: "https://i.gyazo.com/592b20ed6e528312b274dce282d93ed8.png",
   },
 ];

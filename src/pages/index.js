@@ -10,10 +10,7 @@ const Index = () => (
   <Layout>
     <Background>
       <Nav />
-      <Hero
-        title="Mountain Mouth Co., Ltd."
-        desc="Talk is cheap, show me the code."
-      />
+      <Hero title="Mountain Mouth" desc="Talk is cheap, show me the code." />
     </Background>
   </Layout>
 );

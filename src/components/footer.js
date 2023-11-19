@@ -10,11 +10,12 @@ const Footer = () => (
       height: "50px",
     }}
   >
-    <div class="row">
-      <div class="col-10 col"></div>
-      <div class="col-2 col">
-        © {new Date().getFullYear()}
-        {` `}Nullius in verba
+    <div class="row flex-center">
+      <div>
+        <p>
+          © {new Date().getFullYear()}
+          {` `}Nullius in verba
+        </p>
       </div>
     </div>
   </footer>

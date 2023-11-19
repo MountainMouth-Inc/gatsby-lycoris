@@ -35,9 +35,10 @@ const Background = ({ children }) => {
             style={{
               opacity: 0.5,
               backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
+              backgroundRepeat: "repeat-y",
               backgroundPosition: "center",
-              position: "absolute",
+              //position: "absolute",
+              position: "fixed",
               top: 0,
               zIndex: -1,
               height: "100vh",

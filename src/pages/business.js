@@ -6,14 +6,14 @@ import Container from "@components/container.js";
 import Tab from "@components/tab.js";
 import Seo from "@components/seo.js";
 import Nav from "@components/nav.js";
-import { contents } from "@constants/constants.js";
+import { business } from "@constants/business.js";
 
 const Business = () => (
   <Layout>
     <Background>
       <Nav />
       <Container>
-        <Tab children={contents} />
+        <Tab children={business} />
       </Container>
     </Background>
   </Layout>

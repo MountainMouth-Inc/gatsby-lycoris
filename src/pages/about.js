@@ -15,21 +15,18 @@ const About = () => (
           <h1 class="article-title">
             <a href="">About</a>
           </h1>
-          <p class="article-meta">
-            information by{" "}
-            <a href="https://twitter.com/syamaguc" target="_blank">
-              syamaguc
-            </a>
-          </p>
-          <p class="text-lead">Name : MountainMouth co.,ltd. ⛰️</p>
+          <p>Make programer great again, Yes we can.</p>
+          <p class="text-lead">Name : MountainMouth ⛰️</p>
           <p class="text-lead">Location : Tokyo, JP 🗾</p>
           <p class="text-lead">
-            Business : <a href="/business/"> ▶️ here</a>
+            Business : <a href="/business/"> here ◀️</a>
           </p>
           <p class="text-lead">
-            Employees :<a href="/member/"> ▶️ here</a>
+            Employees :<a href="/member/"> here ◀️</a>
           </p>
-          <p class="text-lead">Capital stock : secret 🖤</p>
+          <p class="text-lead">
+            Contact :<a href="https://twitter.com/syamaguc"> Twitter(X) DM</a>
+          </p>
         </article>
       </Container>
     </Background>
