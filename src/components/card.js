@@ -4,7 +4,7 @@ const Card = ({ title, subtitle, desc, img }) => (
   <div
     class="card"
     style={{
-      width: 18 + "rem",
+      width: 16 + "rem",
       backgroundColor: "var(--white)",
       margin: "0.5rem 0.5rem 0.5rem 0.5rem",
     }}

@@ -15,7 +15,6 @@ export const business = [
         }}
       >
         <div>
-          <p>I usually use</p>
           <table>
             <thead>
               <tr>
@@ -64,7 +63,7 @@ export const business = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/48259abc13210869d504c2fd762c5075.jpg"
+            src="https://i.gyazo.com/476c7c74898695084e729cf8d7f50a90.png"
             alt="img"
           />
         </div>
@@ -98,7 +97,7 @@ export const business = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/95af560edfa1d9146236fba3392d778d.jpg"
+            src="https://i.gyazo.com/3b7aee1daa5c73ba6eb6243f02274be5.png"
             alt="img"
           />
         </div>
@@ -132,7 +131,7 @@ export const business = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/a42fc1b84e01ac37cb1864815a19bab1.jpg"
+            src="https://i.gyazo.com/106e2364a9f1a20da47f71f471f45670.png"
             alt="img"
           />
         </div>
@@ -196,7 +195,7 @@ export const business = [
         </div>
         <div>
           <img
-            src="https://i.gyazo.com/47efa69e32a3a2f37f8757a2748c1ee8.jpg"
+            src="https://i.gyazo.com/1adc1620a622b358518de12b8f521991.png"
             alt="img"
           />
         </div>

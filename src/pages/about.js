@@ -23,7 +23,7 @@ const About = () => (
             <h1 class="article-title">
               <a href="">About</a>
             </h1>
-            <p class="text-lead">Name : MountainMouth⛰️</p>
+            <p class="text-lead">MountainMouth⛰️</p>
             <p class="text-lead">Location : Tokyo, JP🗾</p>
             <p class="text-lead">
               Business : <a href="/business/"> here ◀️</a>
@@ -37,7 +37,7 @@ const About = () => (
           </article>
           <div>
             <img
-              src="https://i.gyazo.com/b33be8aa01498547543df768a5965988.jpg"
+              src="https://i.gyazo.com/2706f68ba74708c2bf6620257bee303a.png"
               alt="img"
             />
           </div>

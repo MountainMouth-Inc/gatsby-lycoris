@@ -10,6 +10,9 @@ const Hero = ({ title, desc }) => (
     <div style={{ margin: 20, position: "relative" }}>
       <img src={welcomeImage} alt="chisato-red" />
     </div>
+    <div align="center">
+      <p class="text-danger">by Stable Diffusion, DALL-E-3</p>
+    </div>
   </Container>
 );
 
