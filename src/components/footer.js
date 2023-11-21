@@ -11,11 +11,12 @@ const Footer = () => (
     }}
   >
     <div class="row flex-center">
-      <div>
-        <p>
-          © {new Date().getFullYear()}
-          {` `}Nullius in verba
-        </p>
+      <div class="sm-2 col">
+        © {new Date().getFullYear()}
+        {` `}Nullius in verba
+      </div>
+      <div class="sm-2 col">
+        <a href="/privacy/">privacy policy</a>
       </div>
     </div>
   </footer>

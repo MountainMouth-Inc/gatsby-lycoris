@@ -14,7 +14,16 @@ const Nav = ({}) => {
       }
       allSitePage(
         filter: {
-          path: { nin: ["/", "/dev-404-page/", "/404/", "/404.html", "/dev/"] }
+          path: {
+            nin: [
+              "/"
+              "/dev-404-page/"
+              "/404/"
+              "/404.html"
+              "/dev/"
+              "/privacy/"
+            ]
+          }
         }
       ) {
         edges {

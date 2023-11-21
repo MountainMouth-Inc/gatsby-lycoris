@@ -1,40 +1,36 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-const pageStyles = {
-  padding: "96px",
-};
-
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.5rem",
-  borderRadius: 4,
-};
+import Layout from "@components/layout.js";
+import Background from "@components/background.js";
+import Container from "@components/container.js";
+import Nav from "@components/nav.js";
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <dir class="paper container">
-        <h1 class="text-danger">Page not found</h1>
-        <p class="text-lead">
-          Sorry 😔, we couldn’t find what you were looking for.
-          <br />
-          {process.env.NODE_ENV === "development" ? (
-            <>
-              <br />
-              Try creating a page in <code style={codeStyles}>src/pages/</code>.
-              <br />
-            </>
-          ) : null}
-          <br />
-          <h4>
-            <Link to="/">Go home</Link>.
-          </h4>
-        </p>
-      </dir>
-    </main>
+    <Layout>
+      <Background>
+        <Nav />
+        <Container>
+          <h1 class="text-danger">Page not found</h1>
+          <p class="text-lead">
+            Sorry 😔, we couldn’t find what you were looking for.
+            <br />
+            {process.env.NODE_ENV === "development" ? (
+              <>
+                <br />
+                Try creating a page in <code>src/pages/</code>.
+                <br />
+              </>
+            ) : null}
+            <br />
+            <h4>
+              <Link to="/">Go home</Link>.
+            </h4>
+          </p>
+        </Container>
+      </Background>
+    </Layout>
   );
 };
 
