@@ -11,11 +11,15 @@ const Footer = () => (
     }}
   >
     <div class="row flex-center">
-      <div class="sm-2 col">
-        © {new Date().getFullYear()}
-        {` `}Nullius in verba
-      </div>
-      <div class="sm-2 col">
+      <div class="col-12 col" align="center">
+        <a
+          href="https://en.wikipedia.org/wiki/Nullius_in_verba"
+          target="_blank"
+        >
+          © {new Date().getFullYear()}
+          {` `}Nullius in verba
+        </a>
+        {` | `}
         <a href="/privacy/">privacy policy</a>
       </div>
     </div>
