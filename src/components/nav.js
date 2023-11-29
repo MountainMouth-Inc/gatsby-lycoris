@@ -34,6 +34,7 @@ const Nav = ({}) => {
       }
     }
   `);
+  const numPages = data.allSitePage.edges.length;
 
   return (
     <nav class="border fixed split-nav">
@@ -49,6 +50,7 @@ const Nav = ({}) => {
           {data.allSitePage.edges.map(({ node }, index) => (
             <div class={`bar${index}`}></div>
           ))}
+          <div class={`bar${numPages + 1}`}></div>
         </label>
         <div class="collapsible-body">
           <ul class="inline">

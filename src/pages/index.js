@@ -1,17 +1,17 @@
 import React from "react";
 
-import Layout from "@components/layout.js";
-import Background from "@components/background.js";
+import Layout from "@templates/layout.js";
 import Nav from "@components/nav.js";
 import Hero from "@components/hero.js";
 import Seo from "@components/seo.js";
 
 const Index = () => (
   <Layout>
-    <Background>
-      <Nav />
-      <Hero title="Mountain Mouth" desc="Talk is cheap, show me the code." />
-    </Background>
+    <Nav />
+    <Hero
+      title="Mountain Mouth Corp."
+      desc="Talk is cheap, show me the code."
+    />
   </Layout>
 );
 

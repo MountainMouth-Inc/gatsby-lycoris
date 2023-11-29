@@ -1,6 +1,7 @@
 import React from "react";
 
-import welcomeImage from "@images/chisato-red.jpg";
+import { StaticImage } from "gatsby-plugin-image";
+
 import Container from "@components/container.js";
 
 const Hero = ({ title, desc }) => (
@@ -8,10 +9,10 @@ const Hero = ({ title, desc }) => (
     <h2 style={{ textAlign: "center" }}>{title}</h2>
     <h4 style={{ textAlign: "center" }}>{desc}</h4>
     <div style={{ margin: 20, position: "relative" }}>
-      <img src={welcomeImage} alt="chisato-red" />
+      <StaticImage src="../images/chisato-red.jpg" />
     </div>
     <div align="center">
-      <p class="text-danger">by Stable Diffusion, DALL-E-3</p>
+      <p class="text-danger">by Stable Diffusion</p>
     </div>
   </Container>
 );

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Content from "@components/content.js";
 
 const Tab = ({ children }) => {
   const [activeTab, setActiveTab] = useState(0);
@@ -26,7 +25,25 @@ const Tab = ({ children }) => {
             className="content"
             style={{ display: idx === activeTab ? "block" : "none" }}
           >
-            <Content content={child} />
+            <div
+              style={{
+                padding: "0.1rem 0.1rem 0.1rem 0.1rem",
+                textAlign: "center",
+              }}
+            >
+              <h2>{child.title}</h2>
+              <p style={{ color: "var(--primary)" }}>{child.desc}</p>
+              <content
+                style={{
+                  display: "grid",
+                  alignItems: "center",
+                  justifyContent: "space-evenly",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(240px, 340px))",
+                }}
+              >
+                {child.body}
+              </content>
+            </div>
           </div>
         ))}
       </div>

@@ -16,7 +16,7 @@ export const pageQuery = graphql`
   }
 `;
 
-const Background = ({ children }) => {
+const DynamicBackground = ({ children }) => {
   const data = useStaticQuery(pageQuery);
   const [imageData, setImageData] = useState(null);
   useEffect(() => {
@@ -37,7 +37,6 @@ const Background = ({ children }) => {
               backgroundSize: "cover",
               backgroundRepeat: "repeat-y",
               backgroundPosition: "center",
-              //position: "absolute",
               position: "fixed",
               top: 0,
               zIndex: -1,
@@ -52,4 +51,4 @@ const Background = ({ children }) => {
   );
 };
 
-export default Background;
+export default DynamicBackground;

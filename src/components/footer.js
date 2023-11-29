@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => (
   <footer
     style={{
-      backgroundColor: "var(--primary-light)",
+      backgroundColor: "var(--white)",
       position: "fixed",
       bottom: 0,
       width: "100%",
@@ -19,7 +19,7 @@ const Footer = () => (
           © {new Date().getFullYear()}
           {` `}Nullius in verba
         </a>
-        {` | `}
+        {` ❤️ `}
         <a href="/privacy/">privacy policy</a>
       </div>
     </div>
