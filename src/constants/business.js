@@ -14,7 +14,7 @@ const webdev = (
           <tr>
             <td>Frontend</td>
             <td>
-              <span class="badge danger">Next</span>
+              <span class="badge danger">Next.js</span>
               <span class="badge secondary">Gatsby</span>
               <span class="badge warning">Astro</span>
               <span class="badge warning">Svelte</span>
@@ -24,8 +24,8 @@ const webdev = (
             <td>Backend</td>
             <td>
               <span class="badge danger">FastAPI</span>
-              <span class="badge">Django</span>
               <span class="badge">Nestjs</span>
+              <span class="badge">Django</span>
             </td>
           </tr>
           <tr>
@@ -153,6 +153,49 @@ const marketing = (
   </>
 );
 
+const ai = (
+  <>
+    <div>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Machine Learning</td>
+            <td>
+              <span class="badge danger">LightGBM</span>
+              <span class="badge danger">Bigquery</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Computer Vision</td>
+            <td>
+              <span class="badge secondary">Stable Diffusion XL</span>
+            </td>
+          </tr>
+          <tr>
+            <td>Other</td>
+            <td>
+              <span class="badge warning">LangChain</span>
+              <span class="badge secondary">Chroma DB</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <img
+        src="https://i.gyazo.com/dacf1bf99743baf26523ea63e0e662ab.jpg"
+        alt="img"
+      />
+    </div>
+  </>
+);
+
 export const business = [
   {
     label: "Web Development",
@@ -165,6 +208,12 @@ export const business = [
     title: "Data Science All in One",
     desc: "Analyze/utilize existing data, collect data through scraping, build data analysis infrastructure.",
     body: ds,
+  },
+  {
+    label: "AI Solutions",
+    title: "We are summoning the demon",
+    desc: "Artifical intelligence can be our friend",
+    body: ai,
   },
   {
     label: "DX Consulting",
