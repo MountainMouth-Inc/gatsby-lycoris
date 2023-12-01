@@ -20,10 +20,10 @@ const About = () => (
         justifyContent: "space-evenly",
       }}
     >
-      <h1 class="text-lead">Hack The World</h1>
-      <h3 class="text-lead">1. Laziness, Impatience, Hubris</h3>
-      <h3 class="text-lead">2. Done is better than perfect</h3>
-      <h3 class="text-lead">3. Talk is cheap, show me the code.</h3>
+      <h1 class="text-lead"> - Values - </h1>
+      <h2 class="text-lead"> 😴 Laziness</h2>
+      <h2 class="text-lead"> 🤨 Impatience</h2>
+      <h2 class="text-lead"> 🤪 Hubris</h2>
     </content>
     <div
       style={{
