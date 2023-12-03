@@ -63,7 +63,7 @@ const LINK = () => (
         </article>
         <div>
           <img
-            src="https://i.gyazo.com/d61011e3647f5fdcd6f0e4f63cb8d5ec.jpg"
+            src="https://i.gyazo.com/b58a3a72f7028d70f4bb877bf45cf0af.jpg"
             alt="img"
           />
         </div>

@@ -51,7 +51,7 @@ const webdev = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/34d136974ed3a698329985213b50aabc.jpg"
+        src="https://i.gyazo.com/25806b7224fc7eda2203866654e0118b.jpg"
         alt="img"
       />
     </div>
@@ -72,7 +72,7 @@ const ds = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/e6958776a5e9ee342961581c943d7352.jpg"
+        src="https://i.gyazo.com/e403f5c70f8ce3116b91cc2fa7136827.jpg"
         alt="img"
       />
     </div>
@@ -95,7 +95,7 @@ const dx = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/38b52100dc47702818662dfacf8e4a3b.jpg"
+        src="https://i.gyazo.com/e889208bec5f715ed222246bf3ce3cc1.jpg"
         alt="img"
       />
     </div>
@@ -146,7 +146,7 @@ const marketing = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/b3c41d8c9e9fd6a6557b678cb16fad16.jpg"
+        src="https://i.gyazo.com/91881ed9b20366a703202a4b5acaa497.jpg"
         alt="img"
       />
     </div>
@@ -189,7 +189,7 @@ const ai = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/dacf1bf99743baf26523ea63e0e662ab.jpg"
+        src="https://i.gyazo.com/143944057de36d38ad8794f60c7a7ccb.jpg"
         alt="img"
       />
     </div>
