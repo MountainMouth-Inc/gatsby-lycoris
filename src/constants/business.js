@@ -95,7 +95,7 @@ const dx = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/e889208bec5f715ed222246bf3ce3cc1.jpg"
+        src="https://i.gyazo.com/a18e4ad9ceada762e30845fa76c90b19.jpg"
         alt="img"
       />
     </div>
@@ -146,7 +146,7 @@ const marketing = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/91881ed9b20366a703202a4b5acaa497.jpg"
+        src="https://i.gyazo.com/e9f583370be88651af20a3f1484eebda.jpg"
         alt="img"
       />
     </div>
@@ -189,7 +189,7 @@ const ai = (
     </div>
     <div>
       <img
-        src="https://i.gyazo.com/143944057de36d38ad8794f60c7a7ccb.jpg"
+        src="https://i.gyazo.com/30d149c909848bdd70b61fd2a2f21188.jpg"
         alt="img"
       />
     </div>
