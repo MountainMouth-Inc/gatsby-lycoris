@@ -1,69 +1,177 @@
 module.exports = {
   siteMetadata: {
-    title: `Mountain Mouth`,
-    author: {
-      name: `syamaguc`,
-      summary: `Miracle cute programmer`,
-    },
-    description: `MountainMouth homepage inspired by my favorite anime "Lycoris Recoil"`,
-    siteUrl: `https://mountainmouth.xyz`,
-    social: {
-      twitter: `syamaguc`,
-    },
+    // Site URL for when it goes live
+    siteUrl: 'https://mountainmouth.xyz',
+    // Site Title
+    title: 'MountainMouth',
+    // Site Description
+    description:
+      '株式会社MountainMouthのホームページ | Mountain Mouth Inc Home Page',
   },
-
   plugins: [
-    //NOTE: build errorのため一旦コメントアウト
-    //`gatsby-plugin-preact`,
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        icon: "static/icon.png",
-      },
-    },
-    "gatsby-plugin-mdx",
-    "gatsby-transformer-remark",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/images/`,
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: `${__dirname}/src/pages/`,
+        path: `${__dirname}/src/news`,
+        name: `news`,
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-J51B0TWW9Q", // Google Analytics / GA
+        path: `${__dirname}/src/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+              wrapperStyle: `margin: 0 0 30px;`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
-        pluginConfig: {
-          head: true,
+      },
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.nodes.map((node) => {
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + node.fields.slug,
+                  custom_elements: [{ 'content:encoded': node.html }],
+                });
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                  filter: { frontmatter: { posttype: { eq: "news" } } },
+                ) {
+                  nodes {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: "MountainMouth's RSS Feed",
+            match: '^/news/',
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `MountainMouth`,
+        short_name: `MountainMouth`,
+        start_url: `/`,
+        background_color: `#10B981`,
+        theme_color: `#10B981`, // This color appears on mobile
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`,
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n`,
+      options: {
+        defaultLang: `ja`,
+        prefixDefault: false,
+        configPath: require.resolve(`./i18n/config.json`),
+      },
+    },
+    {
+      resolve: `gatsby-theme-i18n-react-i18next`,
+      options: {
+        locales: `./i18n/locales`,
+        i18nextOptions: {
+          debug: process.env.NODE_ENV === 'development',
+          fallbackLng: 'ja',
+          lowerCaseLng: false,
+          load: 'currentOnly',
+          ns: [
+            'translation',
+            'index',
+            'news',
+            'about',
+            'faq',
+            'download',
+            //'cloud-images',
+            'sponsors',
+            'partners',
+            'support',
+            'resf-faq',
+            'merch',
+            'ai',
+          ],
+          returnObjects: true,
+          interpolation: {
+            escapeValue: false,
+          },
+          react: {
+            useSuspense: true,
+          },
         },
       },
     },
     {
-      resolve: `gatsby-plugin-canonical-urls`,
+      resolve: `@devular/gatsby-plugin-plausible`,
       options: {
-        siteUrl: `https://mountainmouth.xyz`,
-        stripQueryString: true,
-      },
-    },
-    {
-      resolve: "gatsby-plugin-robots-txt",
-      options: {
-        host: `https://mountainmouth.xyz`,
+        domain: `mountainmouth.xyz`,
+        proxyScript: `https://img.resf.workers.dev/js/script.outbound-links.js`,
+        proxyApi: `https://img.resf.workers.dev/img/event`,
       },
     },
   ],

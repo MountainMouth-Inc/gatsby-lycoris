@@ -1,0 +1,25 @@
+{
+  "title": "Our Team",
+  "description": "We are small group of elite",
+  "support": {
+    "neovim": {
+      "name": "Neovim",
+      "tier": 1,
+      "title": "Editor",
+      "blurb": "Free Software, community developed, extensible, and highly performant text editor."
+    },
+    "stablediffusion": {
+      "name": "Stable Diffusion",
+      "tier": 1,
+      "title": "Creative Director",
+      "blurb": "クリエイティブ担当、たまに手足を二本以上生やしてしまうのが玉に瑕"
+    },
+    "chatgpt": {
+      "name": "Chat GPT",
+      "tier": 1,
+      "title": "Director",
+      "blurb": "何でも屋"
+    }
+  },
+  "get": "Get Support"
+}

@@ -1,20 +1,24 @@
-import React from "react";
+import * as React from 'react';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
+import Header from '../components/Header';
+import Hero from '../components/Home/Hero';
+import Features from '../components/Home/Features';
+import NewsSection from '../components/Home/NewsSection';
+import Footer from '../components/Footer';
 
-import Layout from "@templates/layout.js";
-import Nav from "@components/nav.js";
-import Hero from "@components/hero.js";
-import Seo from "@components/seo.js";
+// markup
+const IndexPage = () => {
+  return (
+    <Layout>
+      <SEO />
+      <Header pageContext="{locale: language}" />
+      <Hero pageContext="{locale: language}" />
+      <Features pageContext="{locale: language}" />
+      <NewsSection pageContext="{locale: language}" />
+      <Footer pageContext="{locale: language}" />
+    </Layout>
+  );
+};
 
-const Index = () => (
-  <Layout>
-    <Nav />
-    <Hero
-      title="Mountain Mouth Corp."
-      desc="Talk is cheap, show me the code."
-    />
-  </Layout>
-);
-
-export const Head = () => <Seo title="Home"></Seo>;
-
-export default Index;
+export default IndexPage;

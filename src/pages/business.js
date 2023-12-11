@@ -1,21 +1,19 @@
-import React from "react";
+import * as React from 'react';
+import Layout from '../components/Layout';
+import SEO from '../components/Seo';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Hero from '../components/business/Hero';
 
-import Layout from "@templates/layout.js";
-import Container from "@components/container.js";
-import Tab from "@components/tab.js";
-import Seo from "@components/seo.js";
-import Nav from "@components/nav.js";
-import { business } from "@constants/business.js";
+const BusinessPage = ({ pageContext: { locale: language } }) => {
+  return (
+    <Layout>
+      <SEO title="Business on Mountain Mouth" />
+      <Header pageContext="{locale: language}" />
+      <Hero pageContext="{locale: language}" />
+      <Footer pageContext="{locale: language}" />
+    </Layout>
+  );
+};
 
-const Business = () => (
-  <Layout>
-    <Nav />
-    <Container>
-      <Tab children={business} />
-    </Container>
-  </Layout>
-);
-
-export const Head = () => <Seo title="Business"></Seo>;
-
-export default Business;
+export default BusinessPage;

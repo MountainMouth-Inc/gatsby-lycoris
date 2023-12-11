@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "new": "新着情報",
+    "title": "Hack the World",
+    "description": "株式会社Mountain Mouthは、LinuxとVimとBitcoinが大好きなエンジニアが設立した会社です。",
+    "cta1": "ダウンロード",
+    "cta2": "移行"
+  },
+  "features": {
+    "title": "Values",
+    "subtitle": "",
+    "description": "",
+    "1": {
+      "title": "怠慢（Laziness）",
+      "description": "全体として必要となる労力を減らすためとなれば、努力を惜しまない、というスタンスで仕事をしています。長期的にサボるためには、必死で知恵を絞ります。"
+    },
+    "2": {
+      "title": "短気（Impatience）",
+      "description": "短気な人間は仕様変更やパフォーマンスの問題で何度もコードを書きなおすことを嫌います。そうならないよう、常に先を見越してプログラミングすることを心掛けています。"
+    },
+    "3": {
+      "title": "傲慢（Hubris）",
+      "description": "他者に文句を言わせないような質の高い成果物を作るというスタンスです。自分の成果物に対して常に誇りを持てるように仕事をしています。"
+    }
+  },
+  "latest-news": {
+    "title": "最新ニュース",
+    "description": "最新情報をご紹介します。"
+  },
+  "sponsors-partners": {
+    "backed": "パートナー",
+    "sponsors": "すべてのスポンサー",
+    "partners": "すべてのパートナー",
+    "support": "サポートパートナー"
+  }
+}
