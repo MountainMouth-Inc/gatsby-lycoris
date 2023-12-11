@@ -1,5 +1,5 @@
 import React from 'react';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -9,7 +9,7 @@ import ShrugDark from '../images/CEO.jpg';
 const NotFoundPage = () => {
   return (
     <Layout>
-      <SEO title="404" />
+      <Seo title="404" />
       <Header pageContext="{locale: language}" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-400 dark:text-gray-200">
         <div className="flex dark:hidden items-center justify-center mt-20">

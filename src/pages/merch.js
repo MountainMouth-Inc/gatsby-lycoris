@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import PageHeader from '../components/PageHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -36,7 +36,7 @@ const MerchPage = ({ pageContext: { locale: language } }) => {
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <Header pageContext="{locale: language}" />
       <PageHeader
         title={translate('title')}

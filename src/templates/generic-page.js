@@ -4,7 +4,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 
 const classes = {
   wrapper: 'mt-16 blog-content dark:text-gray-50',
@@ -19,7 +19,7 @@ const GenericPage = ({ data }) => {
         metadata={data.site.siteMetadata}
         pageContext="{locale: language}"
       />
-      <SEO title={post.frontmatter.title} />
+      <Seo title={post.frontmatter.title} />
       <div className="relative py-16 overflow-hidden">
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">

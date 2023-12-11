@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import Header from '../components/Header';
 import Hero from '../components/Home/Hero';
 import Features from '../components/Home/Features';
@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Header pageContext="{locale: language}" />
       <Hero pageContext="{locale: language}" />
       <Features pageContext="{locale: language}" />

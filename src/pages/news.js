@@ -5,7 +5,7 @@ import BlogPosts from '../components/BlogPosts';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import NotFound from '../pages/404';
 import Pagination from '../components/Pagination';
 import { Translate } from '../../i18n/utils/translate';
@@ -23,7 +23,7 @@ const News = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <Header
         metadata={data.site.siteMetadata}
         pageContext="{locale: language}"

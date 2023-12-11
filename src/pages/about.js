@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CEO from '../images/CEO.jpg';
@@ -12,7 +12,7 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <Header pageContext="{locale: language}" />
       <div className="py-16 bg-gray-50 dark:bg-gray-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">

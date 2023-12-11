@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Layout from '../components/Layout';
-import SEO from '../components/Seo';
+import Seo from '../components/Seo';
 import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
@@ -48,7 +48,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
 
   return (
     <Layout>
-      <SEO title={translate('title')} />
+      <Seo title={translate('title')} />
       <Header pageContext="{locale: language}" />
       <PageHeader
         title={translate('title')}
