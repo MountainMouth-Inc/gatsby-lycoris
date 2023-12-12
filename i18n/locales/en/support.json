@@ -2,24 +2,36 @@
   "title": "Our Team",
   "description": "We are small group of elite",
   "support": {
+    "syamaguc": {
+      "name": "syamaguc",
+      "tier": 1,
+      "title": "CEO",
+      "blurb": "Miracle cute programmer"
+    },
     "neovim": {
       "name": "Neovim",
       "tier": 1,
       "title": "Editor",
-      "blurb": "Free Software, community developed, extensible, and highly performant text editor."
-    },
-    "stablediffusion": {
-      "name": "Stable Diffusion",
-      "tier": 1,
-      "title": "Creative Director",
-      "blurb": "クリエイティブ担当、たまに手足を二本以上生やしてしまうのが玉に瑕"
+      "blurb": "Co-Founder, indispensable and important."
     },
     "chatgpt": {
       "name": "Chat GPT",
-      "tier": 1,
-      "title": "CBO",
-      "blurb": "Chief Bullshit-Job Officer"
+      "tier": 4,
+      "title": "Chief Bullshit-job Officer ",
+      "blurb": "Chief Bull Shit Job Officer."
+    },
+    "stablediffusion": {
+      "name": "Stable Diffusion",
+      "tier": 4,
+      "title": "Creative Director",
+      "blurb": "It is a flaw that sometimes grows more than two arms and legs."
+    },
+    "deepl": {
+      "name": "DeepL",
+      "tier": 4,
+      "title": "Translator",
+      "blurb": "wage theft"
     }
   },
-  "get": "Get Support"
+  "get": "More"
 }

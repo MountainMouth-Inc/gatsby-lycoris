@@ -3,11 +3,11 @@
   "subtitle": "沿革",
   "content": {
     "highlight": "2021年3月23日、株式会社MountainMouthを設立しました。",
-    "paragraph": "できるだけ楽をすることをモットーに仕事をしています。"
+    "paragraph": "幼少期にソードアート・オンライン(Sword Art Online)やスティーヴン・スピルバーグの『Ready Player One』を観て、漠然と何か創れる人間になりたいと思っていました。24歳の時に、ポール・グレアム(Paul Graham)の『ハッカーと画家』を読み、慌てて会社を辞め起業しました。"
   },
   "organization": {
     "heading": "組織",
-    "paragraph": "現在はCEO(syamaguc)、編集担当(Neovim)、クリエイティブ担当(Stable Diffusion)、翻訳担当(Deep L)、総務(Chat GPT)の5名体制で運営しております。"
+    "paragraph": "現在はCEO(syamaguc)、編集担当(Neovim)、クリエイティブ担当(Stable Diffusion)、翻訳担当(Deep L)、総務全般(Chat GPT)の5名体制で運営しております。"
   },
   "quote": {
     "content": "Talk is cheap, show me the code.",

@@ -6,7 +6,7 @@ module.exports = {
     title: 'MountainMouth',
     // Site Description
     description:
-      '株式会社MountainMouthのホームページ | Mountain Mouth Inc Home Page',
+      '株式会社MountainMouthのホームページ | Mountain Mouth Inc, Home Page',
   },
   plugins: [
     `gatsby-plugin-netlify`,
@@ -147,15 +147,15 @@ module.exports = {
             'index',
             'news',
             'about',
-            'faq',
-            'download',
-            'cloud-images',
-            'sponsors',
-            'partners',
             'support',
-            'resf-faq',
             'merch',
-            'ai',
+            'solutions',
+            //'faq',
+            //'download',
+            //'cloud-images',
+            //'sponsors',
+            //'partners',
+            //'resf-faq',
           ],
           returnObjects: true,
           interpolation: {

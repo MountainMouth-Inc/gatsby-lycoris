@@ -10,14 +10,14 @@
     },
     "stablediffusion": {
       "name": "Stable Diffusion",
-      "tier": 1,
+      "tier": 4,
       "title": "Creative Director",
       "blurb": "クリエイティブ担当、たまに手足を二本以上生やしてしまうのが玉に瑕"
     },
     "chatgpt": {
       "name": "Chat GPT",
       "tier": 1,
-      "title": "CBO",
+      "title": "Chief Bullshit-Job Officer",
       "blurb": "Chief Bullshit-Job Officer"
     }
   },

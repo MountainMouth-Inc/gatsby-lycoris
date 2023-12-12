@@ -1,0 +1,20 @@
+{
+  "solutions": {
+    "web": {
+      "title": "Web Development",
+      "description": "We can provide Full Stack solutions for web development, from front-end to back-end and infrastructures."
+    },
+    "ds": {
+      "title": "Data Science All in One",
+      "description": "Analyze/utilize existing data, collect data through scraping & API, build data analysis infrastructure."
+    },
+    "marketing": {
+      "title": "Marketing Strategy",
+      "description": "Why does strategy make a difference? I was Head of marketing for Job search site, $1M Monthly budget"
+    },
+    "dx": {
+      "title": "DX Consulting",
+      "description": "Let python do the boring stuff, Automation is justice."
+    }
+  }
+}

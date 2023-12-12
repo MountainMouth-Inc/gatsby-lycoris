@@ -3,11 +3,11 @@
   "subtitle": "History",
   "content": {
     "highlight": "Mar 23 2021, Mountain Mouth established.",
-    "paragraph": "できるだけ楽をすることをモットーに仕事をしています。"
+    "paragraph": "幼少期にソードアート・オンライン(Sword Art Online)やスティーヴン・スピルバーグの『Ready Player One』を観て、漠然と何か創れる人間(=プログラマー)になりたいと思っていました。24歳の時に、ポール・グレアム(Paul Graham)著『ハッカーと画家』を読み、会社を辞めて起業しました。"
   },
   "organization": {
-    "heading": "組織",
-    "paragraph": "現在はCEO(syamaguc)、編集担当(Neovim)、クリエイティブ担当(Stable Diffusion)、翻訳担当(Deep L)、総務(Chat GPT)の5名体制で運営しております。"
+    "heading": "Organization",
+    "paragraph": "Currently 5 members, CEO(syamaguc), Editor(Neovim)、Creative Director(Stable Diffusion)、Translator(Deep L)、CBO(Chat GPT)"
   },
   "quote": {
     "content": "Talk is cheap, show me the code.",

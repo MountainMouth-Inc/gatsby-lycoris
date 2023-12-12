@@ -15,10 +15,31 @@ const Footer = ({ pageContext: { locale: language } }) => {
   const translate = Translate();
   const { config } = useLocalization();
   const navigation = {
-    about: [{ name: `${translate('about.about')}`, href: '/about' }],
-    getinvolved: [
+    about: [
       {
-        name: 'Merch',
+        name: `${translate('about.about')}`,
+        href: '/about',
+      },
+      {
+        name: `${translate('about.business')}`,
+        href: '/business',
+      },
+      {
+        name: `${translate('about.member')}`,
+        href: '/member',
+      },
+    ],
+    links: [
+      {
+        name: `${translate('link.blog')}`,
+        href: 'https://syamaguc.dev',
+      },
+      {
+        name: `${translate('link.gallery')}`,
+        href: 'https://syamaguc-diffusion.vercel.app',
+      },
+      {
+        name: `${translate('link.merch')}`,
         href: '/merch',
       },
     ],
@@ -87,10 +108,10 @@ const Footer = ({ pageContext: { locale: language } }) => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
-                  {translate('categories.get-involved')}
+                  {translate('categories.link')}
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.getinvolved.map((item) => (
+                  {navigation.links.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}

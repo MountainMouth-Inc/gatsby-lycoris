@@ -5,51 +5,26 @@
     "news": "ニュース",
     "about": "概要",
     "link": "リンク",
-    "community": "コミュニティ",
-    "documentation": "ドキュメント",
-    "get-involved": "活動に参加する",
     "legal": "リーガル",
-    "language": "言語",
-    "foundation": "Foundation"
+    "language": "言語"
   },
   "about": {
     "about": "Mountain Mouthについて",
-    "business": "Our Business",
+    "business": "私たちのビジネス",
     "member": "メンバー"
   },
   "link": {
     "blog": "CEOのブログ",
-    "gallery": "ギャラリー"
-  },
-  "community": {
-    "contribute": "貢献",
-    "forums": "フォーラム",
-    "mailing": "メーリング リスト",
-    "mattermost": "Mattermost",
-    "irc": "IRC",
-    "calendar": "カレンダー",
-    "bug": "不具合報告",
-    "donate": "寄付",
-    "store": "ストア"
-  },
-  "documentation": {
-    "wiki": "Wiki",
-    "guides": "ガイドとマニュアル",
-    "keys": "GPG鍵情報"
+    "gallery": "ギャラリー",
+    "merch": "グッズ"
   },
   "legal": {
-    "licensing": "ライセンス",
     "privacy": "プライバシーポリシー"
-  },
-  "foundation": {
-    "charter": "RESF Charter & Bylaws",
-    "faq": "RESF FAQ"
   },
   "lang": {
     "choose": "言語の選択",
     "translate": "このサイトを翻訳する"
   },
-  "download": "ダウンロード",
   "copyright": {
     "line1": "© 2021-<0>2023</0> Nullius in verba."
   }

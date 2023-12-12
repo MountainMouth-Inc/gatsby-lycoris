@@ -1,12 +1,12 @@
 ---
-title: 株式会社Mountain Mouthを設立しました。
+title: 会社設立のお知らせ
 date: '2021-03-23'
-description: '株式会社Mountain Mouthを設立しました'
+description: '2021年3月23日、法人登記を完了しました。'
 posttype: 'news'
 ---
 
 2021 年 3 月 23 日に株式会社 Mountain Mouth を設立しました。
 
-27 歳、ここから頑張っていきたいと思います。
+27 歳、ここから頑張るます。
 
 よろろすおねがいするます。

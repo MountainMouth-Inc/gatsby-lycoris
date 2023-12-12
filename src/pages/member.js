@@ -5,19 +5,25 @@ import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
 import { Translate } from '../../i18n/utils/translate';
-import CiqLogo from '../images/CEO.jpg';
-import MontaVistaLogo from '../images/CEO.jpg';
-import OpenLogicLogo from '../images/CEO.jpg';
+import CEO from '../images/CEO.jpg';
 
 const MemberPage = ({ data, pageContext: { locale: language } }) => {
   const translate = Translate('support');
   const partners = [
     {
+      name: `${translate('support.syamaguc.name')}`,
+      tier: `${translate('support.syamaguc.tier')}`,
+      title: `${translate('support.syamaguc.title')}`,
+      blurb: `${translate('support.syamaguc.blurb')}`,
+      source: `${CEO}`,
+      link: '#',
+    },
+    {
       name: `${translate('support.neovim.name')}`,
       tier: `${translate('support.neovim.tier')}`,
       title: `${translate('support.neovim.title')}`,
       blurb: `${translate('support.neovim.blurb')}`,
-      source: `${CiqLogo}`,
+      source: `${CEO}`,
       link: '#',
     },
     {
@@ -25,16 +31,24 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.stablediffusion.tier')}`,
       title: `${translate('support.stablediffusion.title')}`,
       blurb: `${translate('support.stablediffusion.blurb')}`,
-      source: `${MontaVistaLogo}`,
-      link: '',
+      source: `${CEO}`,
+      link: '#',
     },
     {
       name: `${translate('support.chatgpt.name')}`,
       tier: `${translate('support.chatgpt.tier')}`,
       title: `${translate('support.chatgpt.title')}`,
       blurb: `${translate('support.chatgpt.blurb')}`,
-      source: `${OpenLogicLogo}`,
-      link: '',
+      source: `${CEO}`,
+      link: '#',
+    },
+    {
+      name: `${translate('support.deepl.name')}`,
+      tier: `${translate('support.deepl.tier')}`,
+      title: `${translate('support.deepl.title')}`,
+      blurb: `${translate('support.deepl.blurb')}`,
+      source: `${CEO}`,
+      link: '#',
     },
   ];
 

@@ -1,24 +1,22 @@
 {
   "language": "en",
-  "js-warning": "お使いのブラウザでは、JavaScriptが無効になっているようです。本サイトのほとんどの部分はJavaScriptを使用しなくても動作しますが、本サイトを閲覧する際に意図しない体験をする可能性があります。お使いのブラウザの設定で、当サイトの利用を例外として設定することをご検討ください。",
+  "js-warning": "It appears that JavaScript is disabled in your browser. Most parts of this site will work without JavaScript, but you may have an unintended experience when viewing this site. Please consider setting your browser to make an exception for this site.",
   "categories": {
     "news": "News",
     "about": "About",
     "link": "Link",
-    "community": "コミュニティ",
-    "documentation": "Document",
-    "get-involved": "活動に参加する",
     "legal": "Legal",
     "language": "Language"
   },
   "about": {
-    "about": "About US",
+    "about": "About Mountain Mouth",
     "business": "Business",
     "member": "Member"
   },
   "link": {
     "blog": "CEO's blog",
-    "gallery": "gallerry"
+    "gallery": "gallerry",
+    "merch": "merch"
   },
   "legal": {
     "privacy": "privacy policy"
