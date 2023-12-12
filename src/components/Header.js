@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 import { Translate } from '../../i18n/utils/translate';
 import LocalizedLink from '../components/LocalizedLink';
+import DarkModeToggle from '../components/DarkModeToggle';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -67,17 +68,18 @@ const Header = ({ pageContext: { locale: language } }) => {
             </LocalizedLink>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
-            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+            <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
               <span className="sr-only">Open menu</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
           <div className="hidden lg:flex-1 lg:flex lg:items-center lg:justify-between">
             <Popover.Group as="nav" className="flex space-x-10">
+              <DarkModeToggle />
               <LocalizedLink
                 to="/news/1"
                 language={language}
-                className="text-base font-medium text-gray-500 dark:text-gray-50 hover:text-gray-900 dark:hover:text-green-500"
+                className="text-base font-medium text-gray-500 dark:text-gray-50 hover:text-gray-900 dark:hover:text-cyan-500"
               >
                 {translate('categories.news')}
               </LocalizedLink>
@@ -88,7 +90,7 @@ const Header = ({ pageContext: { locale: language } }) => {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+                        'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
                       )}
                     >
                       <span>{translate('categories.about')}</span>
@@ -139,7 +141,7 @@ const Header = ({ pageContext: { locale: language } }) => {
                     <Popover.Button
                       className={classNames(
                         open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500'
+                        'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
                       )}
                     >
                       <span>{translate('categories.link')}</span>

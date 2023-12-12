@@ -19,10 +19,10 @@ const Hero = ({ pageContext: { locale: language } }) => {
                   language={language}
                   className="inline-flex space-x-4"
                 >
-                  <span className="rounded bg-green-50 px-2.5 py-1 text-xs font-semibold text-green-600 tracking-wide uppercase">
+                  <span className="rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase">
                     {translate('hero.new')}
                   </span>
-                  <span className="inline-flex items-center text-sm font-medium text-green-600 space-x-1">
+                  <span className="inline-flex items-center text-sm font-medium text-cyan-600 space-x-1">
                     <span>
                       New Release 2023-07-07 -
                       法人における仮想通貨税制の改正の可能性

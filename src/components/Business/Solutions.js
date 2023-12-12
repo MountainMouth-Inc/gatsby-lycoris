@@ -1,6 +1,6 @@
 import React from 'react';
 import { Translate, Trans } from '../../../i18n/utils/translate';
-import CEO from '../../images/CEO.jpg';
+import Asuna from '../../images/asuna.png';
 
 const Solutions = ({}) => {
   const translate = Translate('solutions');
@@ -8,7 +8,7 @@ const Solutions = ({}) => {
     {
       title: `${translate('solutions.web.title')}`,
       description: `${translate('solutions.web.description')}`,
-      source: `${CEO}`,
+      source: `${Asuna}`,
     },
     {
       title: `${translate('solutions.dx.title')}`,
@@ -26,7 +26,7 @@ const Solutions = ({}) => {
 
   return (
     <div className="bg-white dark:bg-gray-900">
-      <div className="relative isolate overflow-hidden bg-gradient-to-b from-green-100/20">
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-cyan-100/20">
         {solutions.map((solution, idx) => (
           <div className="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
             <div className="px-6 lg:px-0 lg:pt-4">
@@ -41,7 +41,7 @@ const Solutions = ({}) => {
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-green-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
+                      className="rounded-md bg-cyan-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-cyan-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-600"
                     >
                       More info
                     </a>
@@ -51,13 +51,13 @@ const Solutions = ({}) => {
             </div>
             <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
               <div
-                className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white dark:bg-gray-900 shadow-xl shadow-green-600/10 ring-1 ring-green-50 dark:ring-green-900 md:-mr-20 lg:-mr-36"
+                className="absolute inset-y-0 right-1/2 -z-10 -mr-10 w-[200%] skew-x-[-30deg] bg-white dark:bg-gray-900 shadow-xl shadow-cyan-600/10 ring-1 ring-cyan-50 dark:ring-cyan-900 md:-mr-20 lg:-mr-36"
                 aria-hidden="true"
               />
               <div className="shadow-lg md:rounded-3xl">
-                <div className="bg-green-500 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
+                <div className="bg-cyan-500 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
                   <div
-                    className="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-green-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"
+                    className="absolute -inset-y-px left-1/2 -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-cyan-100 opacity-20 ring-1 ring-inset ring-white md:ml-20 lg:ml-36"
                     aria-hidden="true"
                   />
                   <div className="relative px-6 pt-8 sm:pt-16 md:pl-16 md:pr-0">

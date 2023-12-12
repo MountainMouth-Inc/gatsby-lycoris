@@ -31,7 +31,7 @@ const BlogPost = ({ data }) => {
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="text-lg max-w-prose mx-auto">
             <h1>
-              <span className="block text-base text-center text-green-500 font-semibold tracking-wide uppercase font-display">
+              <span className="block text-base text-center text-cyan-500 font-semibold tracking-wide uppercase font-display">
                 {post.frontmatter.date}
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl font-display">
@@ -68,7 +68,7 @@ const BlogPost = ({ data }) => {
               </a>
             </div>
           </div>
-          <div className="text-lg max-w-prose prose prose-green mx-auto dark:prose-invert">
+          <div className="text-lg max-w-prose prose prose-orange mx-auto dark:prose-invert">
             <div
               className={classes.wrapper}
               dangerouslySetInnerHTML={{ __html: post.html }}

@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import CEO from '../images/CEO.jpg';
+import Asuna from '../images/asuna.png';
 import { Translate, Trans } from '../../i18n/utils/translate';
 import LocalizedLink from '../components/LocalizedLink';
 
@@ -17,18 +17,18 @@ const AboutPage = () => {
       <div className="py-16 bg-gray-50 dark:bg-gray-900 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
           <div className="text-base max-w-prose mx-auto lg:max-w-none">
-            <h2 className="text-base text-green-500 font-semibold tracking-wide uppercase font-display">
+            <h2 className="text-base text-cyan-500 font-semibold tracking-wide uppercase font-display">
               {translate('subtitle')}
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl font-display">
               {translate('title')}
             </p>
           </div>
-          <div className="relative z-10 text-base max-w-prose prose prose-green mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
+          <div className="relative z-10 text-base max-w-prose prose prose-orange mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
             <p className="text-lg text-gray-500 dark:text-gray-50">
               <Trans t={translate} i18nKey="content.highlight">
                 <a
-                  className="text-green-600 dark:text-green-500 font-medium"
+                  className="text-cyan-600 dark:text-cyan-500 font-medium"
                   href="https://blog.centos.org/2020/12/future-is-centos-stream/#comment-183642"
                 >
                   via a comment on the CentOS website
@@ -38,7 +38,7 @@ const AboutPage = () => {
           </div>
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <div className="relative z-10">
-              <div className="prose prose-green text-gray-500 dark:text-gray-50 mx-auto lg:max-w-none">
+              <div className="prose prose-orange text-gray-500 dark:text-gray-50 mx-auto lg:max-w-none">
                 <p>{translate('content.paragraph')}</p>
                 <h3 className="dark:text-gray-50">
                   {translate('organization.heading')}
@@ -100,15 +100,15 @@ const AboutPage = () => {
                     <p className="relative">{translate('quote.content')}</p>
                   </div>
                 </div>
-                <cite className="relative flex items-center sm:items-start bg-green-500 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
+                <cite className="relative flex items-center sm:items-start bg-cyan-500 rounded-b-lg not-italic py-5 px-6 sm:py-5 sm:pl-12 sm:pr-10 sm:mt-10">
                   <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2 sm:visible invisible">
                     <img
-                      className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-green-100"
-                      src={CEO}
+                      className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-cyan-100"
+                      src={Asuna}
                       alt=""
                     />
                   </div>
-                  <span className="relative text-green-100 font-semibold leading-6 sm:ml-24 sm:pl-1">
+                  <span className="relative text-cyan-100 font-semibold leading-6 sm:ml-24 sm:pl-1">
                     <p className="text-white font-semibold sm:inline">
                       {translate('quote.ceo')}
                     </p>

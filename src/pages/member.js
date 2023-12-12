@@ -5,7 +5,10 @@ import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
 import { Translate } from '../../i18n/utils/translate';
-import CEO from '../images/CEO.jpg';
+import Asuna from '../images/asuna.png';
+import AsunaElf from '../images/asuna-elf.png';
+import Miorine from '../images/miorine.png';
+import Ryo from '../images/ryoyamada.png';
 
 const MemberPage = ({ data, pageContext: { locale: language } }) => {
   const translate = Translate('support');
@@ -15,7 +18,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.syamaguc.tier')}`,
       title: `${translate('support.syamaguc.title')}`,
       blurb: `${translate('support.syamaguc.blurb')}`,
-      source: `${CEO}`,
+      source: `${Asuna}`,
       link: '#',
     },
     {
@@ -23,7 +26,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.neovim.tier')}`,
       title: `${translate('support.neovim.title')}`,
       blurb: `${translate('support.neovim.blurb')}`,
-      source: `${CEO}`,
+      source: `${AsunaElf}`,
       link: '#',
     },
     {
@@ -31,7 +34,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.stablediffusion.tier')}`,
       title: `${translate('support.stablediffusion.title')}`,
       blurb: `${translate('support.stablediffusion.blurb')}`,
-      source: `${CEO}`,
+      source: `${Ryo}`,
       link: '#',
     },
     {
@@ -39,7 +42,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.chatgpt.tier')}`,
       title: `${translate('support.chatgpt.title')}`,
       blurb: `${translate('support.chatgpt.blurb')}`,
-      source: `${CEO}`,
+      source: `${Miorine}`,
       link: '#',
     },
     {
@@ -47,7 +50,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.deepl.tier')}`,
       title: `${translate('support.deepl.title')}`,
       blurb: `${translate('support.deepl.blurb')}`,
-      source: `${CEO}`,
+      source: `${Asuna}`,
       link: '#',
     },
   ];
@@ -96,7 +99,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
                     </p>
                     <a
                       href={partner.link}
-                      className="mt-4 inline-flex items-center justify-center px-4 py-2 border border-transparent dark:border-gray-700 rounded-md shadow-sm text-base font-medium text-green-500 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800"
+                      className="mt-4 inline-flex items-center justify-center px-4 py-2 border border-transparent dark:border-gray-700 rounded-md shadow-sm text-base font-medium text-cyan-500 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800"
                     >
                       {translate('get')}
                     </a>

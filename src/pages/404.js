@@ -3,8 +3,8 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Shrug from '../images/CEO.jpg';
-import ShrugDark from '../images/CEO.jpg';
+import Shrug from '../images/asuna.png';
+import ShrugDark from '../images/asuna.png';
 
 const NotFoundPage = () => {
   return (
@@ -25,7 +25,7 @@ const NotFoundPage = () => {
           <p className="text-xl">
             Please check the URL and try again or{' '}
             <a
-              className="font-medium text-green-500 underline"
+              className="font-medium text-cyan-500 underline"
               href="https://github.com/MountainMouth-Inc/mountainmouth.xyz"
             >
               report an issue

@@ -2,10 +2,10 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-  //darkMode: ['class', '[data-mode="dark"]'],
+  darkMode: 'class',
   theme: {
     colors: {
-      green: {
+      cyan: {
         50: '#ECFEFF',
         100: '#CFFAFE',
         200: '#A5F3FC',

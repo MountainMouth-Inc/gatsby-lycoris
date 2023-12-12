@@ -5,28 +5,27 @@ import PageHeader from '../components/PageHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Translate } from '../../i18n/utils/translate';
-
-import mucklesImg from '../images/CEO.jpg';
-import hellotuxImg from '../images/CEO.jpg';
-import freewearImg from '../images/CEO.jpg';
+import Asuna from '../images/asuna.png';
+import AsunaElf from '../images/asuna-elf.png';
+import Miorine from '../images/miorine.png';
 
 const vendors = [
   {
-    name: "Muckles' U!",
-    role: 'Ships worldwide, based in US',
-    imageUrl: mucklesImg,
+    name: 'T-shirt',
+    role: 'brabra',
+    imageUrl: Asuna,
     link: '',
   },
   {
-    name: 'HELLOTUX',
-    role: 'Ships worldwide, based in EU',
-    imageUrl: hellotuxImg,
+    name: 'Sweater',
+    role: 'brabra',
+    imageUrl: AsunaElf,
     link: '',
   },
   {
-    name: 'FreeWear',
-    role: 'Ships worldwide, based in EU',
-    imageUrl: freewearImg,
+    name: 'Support',
+    role: 'brabra',
+    imageUrl: Miorine,
     link: '',
   },
 ];
