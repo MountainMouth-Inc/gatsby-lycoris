@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-description: 'Last Updated: April 27th, 2021'
+description: 'Last Updated: March 23th, 2023'
 posttype: 'page'
 ---
 
@@ -106,6 +106,3 @@ Review of management system development and operation
 The Company will provide a personal information protection
 management system, reexamine it regularly, and improve it on a
 continuous basis.
-
-Est April 1, 2021 Revised April 1, 2022
-MountainMouth CEO syamaguc

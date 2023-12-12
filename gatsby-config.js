@@ -150,12 +150,6 @@ module.exports = {
             'support',
             'merch',
             'solutions',
-            //'faq',
-            //'download',
-            //'cloud-images',
-            //'sponsors',
-            //'partners',
-            //'resf-faq',
           ],
           returnObjects: true,
           interpolation: {
