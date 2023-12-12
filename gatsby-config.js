@@ -9,6 +9,7 @@ module.exports = {
       '株式会社MountainMouthのホームページ | Mountain Mouth Inc Home Page',
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -127,7 +128,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-i18n`,
       options: {
-        defaultLang: `ja`,
+        defaultLang: `en`,
         prefixDefault: false,
         configPath: require.resolve(`./i18n/config.json`),
       },
@@ -138,7 +139,7 @@ module.exports = {
         locales: `./i18n/locales`,
         i18nextOptions: {
           debug: process.env.NODE_ENV === 'development',
-          fallbackLng: 'ja',
+          fallbackLng: 'en',
           lowerCaseLng: false,
           load: 'currentOnly',
           ns: [
@@ -148,7 +149,7 @@ module.exports = {
             'about',
             'faq',
             'download',
-            //'cloud-images',
+            'cloud-images',
             'sponsors',
             'partners',
             'support',

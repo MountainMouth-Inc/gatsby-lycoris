@@ -15,7 +15,7 @@ const Hero = ({ pageContext: { locale: language } }) => {
             <div className="mt-20">
               <div>
                 <LocalizedLink
-                  to="/news/mountainmouth-release-2023-03-23/"
+                  to="/new-release-2023-05-11"
                   language={language}
                   className="inline-flex space-x-4"
                 >
@@ -23,7 +23,7 @@ const Hero = ({ pageContext: { locale: language } }) => {
                     {translate('hero.new')}
                   </span>
                   <span className="inline-flex items-center text-sm font-medium text-green-600 space-x-1">
-                    <span>Version 9.3 Released</span>
+                    <span>New Release 2023-05-11</span>
                     <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
                   </span>
                 </LocalizedLink>

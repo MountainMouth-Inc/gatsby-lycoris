@@ -187,11 +187,6 @@ const Footer = ({ pageContext: { locale: language } }) => {
             </Trans>
           </p>
         </div>
-        <div className="pt-8 md:flex md:items-center md:justify-between">
-          <p className="mt-8 text-xs text-gray-400 dark:text-gray-50 md:mt-0 md:order-1">
-            {translate('copyright.line2')}
-          </p>
-        </div>
       </div>
     </footer>
   );

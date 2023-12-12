@@ -8,7 +8,7 @@
   },
   "features": {
     "title": "Values",
-    "subtitle": "",
+    "subtitle": "プログラマーの三大美徳",
     "description": "",
     "1": {
       "title": "怠慢（Laziness）",
@@ -26,11 +26,5 @@
   "latest-news": {
     "title": "最新ニュース",
     "description": "最新情報をご紹介します。"
-  },
-  "sponsors-partners": {
-    "backed": "パートナー",
-    "sponsors": "すべてのスポンサー",
-    "partners": "すべてのパートナー",
-    "support": "サポートパートナー"
   }
 }
