@@ -1,14 +1,15 @@
 import React from 'react';
-import HeroImage1 from '../../images/txt2img-20231213-170551-0.png';
-import HeroImage2 from '../../images/txt2img-20231213-185218-0.png';
 import { ChevronRightIcon } from '@heroicons/react/solid';
 import { Translate, Trans } from '../../../i18n/utils/translate';
 import LocalizedLink from '../LocalizedLink';
 import Carousel from './Carousel';
+import HeroImage1 from '../../images/txt2img-20231213-193600-0.png';
+import HeroImage2 from '../../images/txt2img-20231213-192513-0.png';
+import HeroImage3 from '../../images/txt2img-20231213-170551-0.png';
 
 const Hero = ({ pageContext: { locale: language } }) => {
   const translate = Translate('index');
-  const images = [HeroImage1, HeroImage2];
+  const images = [HeroImage1, HeroImage2, HeroImage3];
 
   return (
     <div className="pb-8 sm:pb-12 lg:pb-12">

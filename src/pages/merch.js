@@ -6,26 +6,26 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Translate } from '../../i18n/utils/translate';
 import Asuna from '../images/asuna.png';
-import AsunaElf from '../images/asuna-elf.png';
+import Ryo from '../images/ryoyamada-cigarettes.png';
 import Miorine from '../images/miorine.png';
 
 const vendors = [
   {
-    name: 'T-shirt',
+    name: 'Support',
     role: 'brabra',
-    imageUrl: Asuna,
+    imageUrl: Miorine,
     link: '',
   },
   {
     name: 'Sweater',
     role: 'brabra',
-    imageUrl: AsunaElf,
+    imageUrl: Ryo,
     link: '',
   },
   {
-    name: 'Support',
+    name: 'T-shirt',
     role: 'brabra',
-    imageUrl: Miorine,
+    imageUrl: Asuna,
     link: '',
   },
 ];

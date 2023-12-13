@@ -3,8 +3,10 @@ import { Switch } from '@headlessui/react';
 
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    const savedMode = localStorage.getItem('darkMode');
-    return savedMode !== null ? savedMode === 'true' : true;
+    if (typeof window !== 'undefined') {
+      const savedMode = localStorage.getItem('darkMode');
+      return savedMode !== null ? savedMode === 'true' : true;
+    } else return true;
   });
 
   useEffect(() => {

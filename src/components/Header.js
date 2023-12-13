@@ -35,10 +35,10 @@ const Header = ({ pageContext: { locale: language } }) => {
       name: `${translate('link.gallery')}`,
       href: 'https://syamaguc-diffusion.vercel.app',
     },
-    //{
-    //  name: 'Merch',
-    //  href: '/merch',
-    //},
+    {
+      name: `${translate('link.merch')}`,
+      href: '/merch',
+    },
   ];
 
   return (

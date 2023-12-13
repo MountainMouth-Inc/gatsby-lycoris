@@ -9,23 +9,23 @@
     "language": "Language"
   },
   "about": {
-    "about": "About Mountain Mouth",
+    "about": "Company",
     "business": "Business",
     "member": "Member"
   },
   "link": {
-    "blog": "CEO's blog",
-    "gallery": "gallerry",
-    "merch": "merch"
+    "blog": "Blog",
+    "gallery": "Gallerry",
+    "merch": "Merch"
   },
   "legal": {
-    "privacy": "privacy policy"
+    "privacy": "Privacy Policy"
   },
   "lang": {
     "choose": "Language",
     "translate": "Translate"
   },
   "copyright": {
-    "line1": "© 2021-<0>2023</0> Nullius in verba."
+    "line": "© 2021-<0>2023</0> Nullius in verba."
   }
 }

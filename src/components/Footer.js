@@ -203,7 +203,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 dark:text-gray-50 md:mt-0 md:order-1">
-            <Trans t={translate} i18nKey="copyright.line1">
+            <Trans t={translate} i18nKey="copyright.line">
               {getCurrentYear()}
             </Trans>
           </p>

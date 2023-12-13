@@ -39,17 +39,12 @@ const AboutPage = () => {
           <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <div className="relative z-10">
               <div className="prose prose-orange text-gray-500 dark:text-gray-50 mx-auto lg:max-w-none">
-                <p>{translate('content.paragraph')}</p>
+                <p>{translate('content.p1')}</p>
+                <p>{translate('content.p2')}</p>
                 <h3 className="dark:text-gray-50">
-                  {translate('organization.heading')}
+                  {translate('investment.h3')}
                 </h3>
-                <p>
-                  <Trans t={translate} i18nKey="organization.paragraph">
-                    <LocalizedLink to="https://resf.org/about">
-                      page
-                    </LocalizedLink>
-                  </Trans>
-                </p>
+                <p>{translate('investment.p')}</p>
               </div>
             </div>
             <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
@@ -105,7 +100,7 @@ const AboutPage = () => {
                     <img
                       className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-cyan-100"
                       src={Chisato}
-                      alt=""
+                      alt="chisato"
                     />
                   </div>
                   <span className="relative text-cyan-100 font-semibold leading-6 sm:ml-24 sm:pl-1">

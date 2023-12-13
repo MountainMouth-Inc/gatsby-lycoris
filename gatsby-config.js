@@ -145,7 +145,6 @@ module.exports = {
           ns: [
             'translation',
             'index',
-            'news',
             'about',
             'support',
             'merch',

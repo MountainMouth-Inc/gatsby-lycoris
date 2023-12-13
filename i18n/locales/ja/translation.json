@@ -2,21 +2,21 @@
   "language": "ja",
   "js-warning": "お使いのブラウザでは、JavaScriptが無効になっているようです。本サイトのほとんどの部分はJavaScriptを使用しなくても動作しますが、本サイトを閲覧する際に意図しない体験をする可能性があります。お使いのブラウザの設定で、当サイトの利用を例外として設定することをご検討ください。",
   "categories": {
-    "news": "ニュース",
-    "about": "概要",
-    "link": "リンク",
-    "legal": "リーガル",
-    "language": "言語"
+    "news": "News",
+    "about": "About",
+    "link": "Link",
+    "legal": "Legal",
+    "language": "Language"
   },
   "about": {
-    "about": "Mountain Mouthについて",
-    "business": "私たちのビジネス",
+    "about": "会社概要",
+    "business": "ビジネス",
     "member": "メンバー"
   },
   "link": {
-    "blog": "CEOのブログ",
+    "blog": "ブログ",
     "gallery": "ギャラリー",
-    "merch": "グッズ"
+    "merch": "オフィシャルグッズ"
   },
   "legal": {
     "privacy": "プライバシーポリシー"
@@ -26,6 +26,6 @@
     "translate": "このサイトを翻訳する"
   },
   "copyright": {
-    "line1": "© 2021-<0>2023</0> Nullius in verba."
+    "line": "© 2021-<0>2023</0> Nullius in verba."
   }
 }

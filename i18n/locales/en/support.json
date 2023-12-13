@@ -1,6 +1,6 @@
 {
   "title": "Our Team",
-  "description": "We are small group of elite",
+  "description": "Small group of elite",
   "support": {
     "syamaguc": {
       "name": "syamaguc",
@@ -11,8 +11,8 @@
     "neovim": {
       "name": "Neovim",
       "tier": 1,
-      "title": "Editor",
-      "blurb": "Co-Founder, indispensable and important."
+      "title": "Co-Founder",
+      "blurb": "Editor"
     },
     "chatgpt": {
       "name": "Chat GPT",
