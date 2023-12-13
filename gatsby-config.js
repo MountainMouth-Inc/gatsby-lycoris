@@ -8,7 +8,10 @@ module.exports = {
     description:
       '株式会社MountainMouthのホームページ | Mountain Mouth Inc, Home Page',
   },
+
   plugins: [
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
@@ -119,8 +122,8 @@ module.exports = {
         name: `MountainMouth`,
         short_name: `MountainMouth`,
         start_url: `/`,
-        background_color: `#10B981`,
-        theme_color: `#10B981`, // This color appears on mobile
+        background_color: `#06B6D4`,
+        theme_color: `#06B6D4`, // This color appears on mobile
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
@@ -166,6 +169,17 @@ module.exports = {
         domain: `mountainmouth.xyz`,
         proxyScript: `https://img.resf.workers.dev/js/script.outbound-links.js`,
         proxyApi: `https://img.resf.workers.dev/img/event`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'G-J51B0TWW9Q', // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
   ],
