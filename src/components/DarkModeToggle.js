@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Switch } from '@headlessui/react';
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem('darkMode');
+    return savedMode !== null ? savedMode === 'true' : true;
+  });
 
   useEffect(() => {
     if (darkMode) {
@@ -10,6 +13,7 @@ const DarkModeToggle = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
+    localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
   return (

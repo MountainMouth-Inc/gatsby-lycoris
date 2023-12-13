@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Asuna from '../images/asuna.png';
+import Chisato from '../images/chisato-about.png';
 import { Translate, Trans } from '../../i18n/utils/translate';
 import LocalizedLink from '../components/LocalizedLink';
 
@@ -104,7 +104,7 @@ const AboutPage = () => {
                   <div className="relative rounded-full border-2 border-white sm:absolute sm:top-0 sm:transform sm:-translate-y-1/2 sm:visible invisible">
                     <img
                       className="w-12 h-12 sm:w-20 sm:h-20 rounded-full bg-cyan-100"
-                      src={Asuna}
+                      src={Chisato}
                       alt=""
                     />
                   </div>

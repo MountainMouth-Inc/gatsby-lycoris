@@ -5,10 +5,10 @@ import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
 import { Translate } from '../../i18n/utils/translate';
+import Ryo from '../images/ryoyamada-cigarettes.png';
 import Asuna from '../images/asuna.png';
 import AsunaElf from '../images/asuna-elf.png';
 import Miorine from '../images/miorine.png';
-import Ryo from '../images/ryoyamada.png';
 
 const MemberPage = ({ data, pageContext: { locale: language } }) => {
   const translate = Translate('support');
@@ -18,7 +18,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.syamaguc.tier')}`,
       title: `${translate('support.syamaguc.title')}`,
       blurb: `${translate('support.syamaguc.blurb')}`,
-      source: `${Asuna}`,
+      source: `${Ryo}`,
       link: '#',
     },
     {
@@ -26,7 +26,15 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.neovim.tier')}`,
       title: `${translate('support.neovim.title')}`,
       blurb: `${translate('support.neovim.blurb')}`,
-      source: `${AsunaElf}`,
+      source: `${Miorine}`,
+      link: '#',
+    },
+    {
+      name: `${translate('support.deepl.name')}`,
+      tier: `${translate('support.deepl.tier')}`,
+      title: `${translate('support.deepl.title')}`,
+      blurb: `${translate('support.deepl.blurb')}`,
+      source: `${Asuna}`,
       link: '#',
     },
     {
@@ -42,15 +50,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
       tier: `${translate('support.chatgpt.tier')}`,
       title: `${translate('support.chatgpt.title')}`,
       blurb: `${translate('support.chatgpt.blurb')}`,
-      source: `${Miorine}`,
-      link: '#',
-    },
-    {
-      name: `${translate('support.deepl.name')}`,
-      tier: `${translate('support.deepl.tier')}`,
-      title: `${translate('support.deepl.title')}`,
-      blurb: `${translate('support.deepl.blurb')}`,
-      source: `${Asuna}`,
+      source: `${AsunaElf}`,
       link: '#',
     },
   ];

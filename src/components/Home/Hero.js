@@ -1,11 +1,14 @@
 import React from 'react';
-import HeroImage from '../../images/chisato-red.jpg';
+import HeroImage1 from '../../images/txt2img-20231213-170551-0.png';
+import HeroImage2 from '../../images/txt2img-20231213-185218-0.png';
 import { ChevronRightIcon } from '@heroicons/react/solid';
 import { Translate, Trans } from '../../../i18n/utils/translate';
 import LocalizedLink from '../LocalizedLink';
+import Carousel from './Carousel';
 
 const Hero = ({ pageContext: { locale: language } }) => {
   const translate = Translate('index');
+  const images = [HeroImage1, HeroImage2];
 
   return (
     <div className="pb-8 sm:pb-12 lg:pb-12">
@@ -82,12 +85,8 @@ const Hero = ({ pageContext: { locale: language } }) => {
                 />
               </svg>
             </div>
-            <div className="relative pl-4 -mr-40 sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-              <img
-                className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none"
-                src={HeroImage}
-                alt=""
-              />
+            <div className="relative pl-2 pr-2 -mr-40 w-full sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
+              <Carousel images={images} />
             </div>
           </div>
         </div>
