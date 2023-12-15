@@ -1,9 +1,9 @@
 import React from 'react';
 import {
-  AdjustmentsIcon,
-  TruckIcon,
-  UserGroupIcon,
-} from '@heroicons/react/solid';
+  KeyIcon,
+  CommandLineIcon,
+  BugAntIcon,
+} from '@heroicons/react/24/solid';
 import { Translate, Trans } from '../../../i18n/utils/translate';
 
 const Features = ({ pageContext: { locale: language } }) => {
@@ -11,17 +11,17 @@ const Features = ({ pageContext: { locale: language } }) => {
   const features = [
     {
       name: `${translate('features.1.title')}`,
-      icon: AdjustmentsIcon,
+      icon: BugAntIcon,
       description: `${translate('features.1.description')}`,
     },
     {
       name: `${translate('features.2.title')}`,
-      icon: UserGroupIcon,
+      icon: CommandLineIcon,
       description: `${translate('features.2.description')}`,
     },
     {
       name: `${translate('features.3.title')}`,
-      icon: TruckIcon,
+      icon: KeyIcon,
       description: `${translate('features.3.description')}`,
     },
   ];

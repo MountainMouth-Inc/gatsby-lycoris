@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRightIcon } from '@heroicons/react/solid';
+import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { Translate, Trans } from '../../../i18n/utils/translate';
 import LocalizedLink from '../LocalizedLink';
 import Carousel from './Carousel';

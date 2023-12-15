@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  ChevronDownIcon,
-  ExternalLinkIcon,
-  TranslateIcon,
-} from '@heroicons/react/solid';
+import { ChevronDownIcon, LanguageIcon } from '@heroicons/react/24/solid';
 import { Translate, Trans } from '../../i18n/utils/translate';
 import { useLocalization } from 'gatsby-theme-i18n';
 import LocalizedLink from '../components/LocalizedLink';
@@ -147,7 +143,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
           </div>
           <div className="mt-12 xl:mt-0">
             <div className="flex items-center">
-              <TranslateIcon class="h-5 w-5 text-gray-400 dark:text-gray-200" />
+              <LanguageIcon class="h-5 w-5 text-gray-400 dark:text-gray-200" />
               <h3 className="ml-1 text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
                 {translate('categories.language')}
               </h3>
