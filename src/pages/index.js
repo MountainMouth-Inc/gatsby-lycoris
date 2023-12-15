@@ -20,4 +20,4 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
-export const Head = ({}) => <Seo title="Business" />;
+export const Head = ({}) => <Seo title="Home" />;

@@ -9,6 +9,7 @@ const Seo = ({ description, title, type, imgPath, children }) => {
         siteMetadata {
           title
           description
+          ogpImage
         }
       }
     }
@@ -17,6 +18,7 @@ const Seo = ({ description, title, type, imgPath, children }) => {
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   const finalTitle = title ? `${title} | ${defaultTitle}` : defaultTitle;
+  const img = imgPath ? imgPath : site.siteMetadata.ogpImage;
 
   return (
     <>
@@ -26,11 +28,8 @@ const Seo = ({ description, title, type, imgPath, children }) => {
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content={defaultTitle} />
-      <meta
-        property="og:image"
-        content={`${site.siteMetadata?.siteUrl}${imgPath}`}
-      />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta property="og:image" content={img} />
+      <meta name="twitter:card" content={img} />
       <meta
         name="twitter:creator"
         content={site.siteMetadata?.social?.twitter || ``}

@@ -5,8 +5,8 @@ module.exports = {
     // Site Title
     title: 'MountainMouth',
     // Site Description
-    description:
-      '株式会社MountainMouthのホームページ | Mountain Mouth Inc, Home Page',
+    description: '株式会社MountainMouthのホームページ',
+    ogpImage: `${__dirname}/src/images/`,
   },
 
   plugins: [
@@ -17,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/txt2img-20231212-193600.png`,
       },
     },
     {
