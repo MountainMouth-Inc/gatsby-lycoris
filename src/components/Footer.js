@@ -1,45 +1,36 @@
 import React from 'react';
-import { ChevronDownIcon, LanguageIcon } from '@heroicons/react/24/solid';
-import { Translate, Trans } from '../../i18n/utils/translate';
-import { useLocalization } from 'gatsby-theme-i18n';
 import LocalizedLink from '../components/LocalizedLink';
 
 const Footer = ({ pageContext: { locale: language } }) => {
   const getCurrentYear = () => {
     return new Date().getFullYear().toString();
   };
-  const translate = Translate();
-  const { config } = useLocalization();
   const navigation = {
     about: [
       {
-        name: `${translate('about.about')}`,
+        name: `About`,
         href: '/about',
       },
       {
-        name: `${translate('about.business')}`,
+        name: `Business`,
         href: '/business',
       },
       {
-        name: `${translate('about.member')}`,
+        name: `Member`,
         href: '/member',
       },
     ],
     links: [
       {
-        name: `${translate('link.blog')}`,
+        name: `CEO's blog`,
         href: 'https://syamaguc.dev',
       },
       {
-        name: `${translate('link.gallery')}`,
-        href: 'https://syamaguc-diffusion.vercel.app',
-      },
-      {
-        name: `${translate('link.merch')}`,
+        name: `Merch`,
         href: '/merch',
       },
     ],
-    legal: [{ name: `${translate('legal.privacy')}`, href: '/privacy-policy' }],
+    legal: [{ name: `Privacy Policy`, href: '/privacy-policy' }],
     social: [
       {
         name: 'GitHub',
@@ -86,7 +77,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
-                  {translate('categories.about')}
+                  About
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.about.map((item) => (
@@ -104,7 +95,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
               </div>
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
-                  {translate('categories.link')}
+                  Links
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.links.map((item) => (
@@ -123,7 +114,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div className="mt-12 md:mt-0">
                 <h3 className="text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
-                  {translate('categories.legal')}
+                  Legal
                 </h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.legal.map((item) => (
@@ -141,49 +132,6 @@ const Footer = ({ pageContext: { locale: language } }) => {
               </div>
             </div>
           </div>
-          <div className="mt-12 xl:mt-0">
-            <div className="flex items-center">
-              <LanguageIcon class="h-5 w-5 text-gray-400 dark:text-gray-200" />
-              <h3 className="ml-1 text-sm font-semibold text-gray-400 dark:text-gray-200 tracking-wider uppercase font-display">
-                {translate('categories.language')}
-              </h3>
-            </div>
-            <form className="mt-4 sm:max-w-xs">
-              <fieldset className="w-full">
-                <label htmlFor="language" className="sr-only">
-                  Language
-                </label>
-                <div className="relative">
-                  <select
-                    id="languagePicker"
-                    onChange={(e) => {
-                      window.location.href = `${
-                        e.target.value === 'en' ? `/` : `/${e.target.value}`
-                      }`;
-                    }}
-                    name="language"
-                    className="appearance-none block w-full bg-none bg-white dark:bg-gray-500 border border-gray-300 rounded-md py-2 pl-3 pr-10 text-base text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-cyan-500 focus:border-cyan-500"
-                  >
-                    <option value="" selected hidden disabled>
-                      {translate('lang.choose')}
-                    </option>
-                    {config.map((locale) => (
-                      <option value={`${locale.code}`}>
-                        {locale.localName}
-                      </option>
-                    ))}
-                    ;
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                    <ChevronDownIcon
-                      className="h-4 w-4 text-gray-400"
-                      aria-hidden="true"
-                    />
-                  </div>
-                </div>
-              </fieldset>
-            </form>
-          </div>
         </div>
         <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
           <div className="flex space-x-6 md:order-2">
@@ -199,9 +147,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 dark:text-gray-50 md:mt-0 md:order-1">
-            <Trans t={translate} i18nKey="copyright.line">
-              {getCurrentYear()}
-            </Trans>
+            {getCurrentYear()}, Nullius in verba
           </p>
         </div>
       </div>

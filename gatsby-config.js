@@ -13,7 +13,6 @@ module.exports = {
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
     `gatsby-plugin-netlify`,
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -92,7 +91,7 @@ module.exports = {
             query: `
               {
                 allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
+                  sort: {frontmatter: {date: DESC}}
                   filter: { frontmatter: { posttype: { eq: "news" } } },
                 ) {
                   nodes {
@@ -126,49 +125,6 @@ module.exports = {
         theme_color: `#06B6D4`, // This color appears on mobile
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-theme-i18n`,
-      options: {
-        defaultLang: `en`,
-        prefixDefault: false,
-        configPath: require.resolve(`./i18n/config.json`),
-      },
-    },
-    {
-      resolve: `gatsby-theme-i18n-react-i18next`,
-      options: {
-        locales: `./i18n/locales`,
-        i18nextOptions: {
-          debug: process.env.NODE_ENV === 'development',
-          fallbackLng: 'en',
-          lowerCaseLng: false,
-          load: 'currentOnly',
-          ns: [
-            'translation',
-            'index',
-            'about',
-            'support',
-            'merch',
-            'solutions',
-          ],
-          returnObjects: true,
-          interpolation: {
-            escapeValue: false,
-          },
-          react: {
-            useSuspense: true,
-          },
-        },
-      },
-    },
-    {
-      resolve: `@devular/gatsby-plugin-plausible`,
-      options: {
-        domain: `mountainmouth.xyz`,
-        proxyScript: `https://img.resf.workers.dev/js/script.outbound-links.js`,
-        proxyApi: `https://img.resf.workers.dev/img/event`,
       },
     },
     {

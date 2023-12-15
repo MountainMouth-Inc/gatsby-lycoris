@@ -7,11 +7,9 @@ import Features from '../components/Home/Features';
 import NewsSection from '../components/Home/NewsSection';
 import Footer from '../components/Footer';
 
-// markup
 const IndexPage = () => {
   return (
     <Layout>
-      <Seo />
       <Header pageContext="{locale: language}" />
       <Hero pageContext="{locale: language}" />
       <Features pageContext="{locale: language}" />
@@ -22,3 +20,4 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+export const Head = ({}) => <Seo title="Business" />;

@@ -8,12 +8,10 @@ import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 import NotFound from '../pages/404';
 import Pagination from '../components/Pagination';
-import { Translate } from '../../i18n/utils/translate';
 
 const News = ({ data, pageContext }) => {
   const posts = data.allMarkdownRemark.edges;
   const noBlog = !posts || !posts.length;
-  const translate = Translate('news');
 
   const totalCount = data.allMarkdownRemark.totalCount;
 
@@ -23,7 +21,6 @@ const News = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <Seo title={translate('title')} />
       <Header
         metadata={data.site.siteMetadata}
         pageContext="{locale: language}"
@@ -51,7 +48,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { posttype: { eq: "news" } } }
       limit: 9
       skip: $skip
@@ -73,3 +70,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+export const Head = ({}) => <Seo title="News" />;

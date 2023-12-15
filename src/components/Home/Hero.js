@@ -1,6 +1,5 @@
 import React from 'react';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
-import { Translate, Trans } from '../../../i18n/utils/translate';
 import LocalizedLink from '../LocalizedLink';
 import Carousel from './Carousel';
 import HeroImage1 from '../../images/txt2img-20231213-193600-0.png';
@@ -8,7 +7,6 @@ import HeroImage2 from '../../images/txt2img-20231213-192513-0.png';
 import HeroImage3 from '../../images/txt2img-20231213-170551-0.png';
 
 const Hero = ({ pageContext: { locale: language } }) => {
-  const translate = Translate('index');
   const images = [HeroImage1, HeroImage2, HeroImage3];
 
   return (
@@ -24,7 +22,7 @@ const Hero = ({ pageContext: { locale: language } }) => {
                   className="inline-flex space-x-4"
                 >
                   <span className="rounded bg-cyan-50 px-2.5 py-1 text-xs font-semibold text-cyan-600 tracking-wide uppercase">
-                    {translate('hero.new')}
+                    新着情報
                   </span>
                   <span className="inline-flex items-center text-sm font-medium text-cyan-600 space-x-1">
                     <span>
@@ -37,12 +35,10 @@ const Hero = ({ pageContext: { locale: language } }) => {
               </div>
               <div className="mt-6 sm:max-w-xl">
                 <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-50 tracking-tight sm:text-5xl font-display">
-                  {translate('hero.title')}
+                  Hack the World.
                 </h1>
                 <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
-                  <Trans t={translate} i18nKey="hero.description">
-                    &#174;
-                  </Trans>
+                  株式会社MountainMouthは、LinuxとVimとBitcoinが大好きなエンジニアの会社です。
                 </p>
               </div>
             </div>

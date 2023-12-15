@@ -4,77 +4,68 @@ import Seo from '../components/Seo';
 import Header from '../components/Header';
 import PageHeader from '../components/PageHeader';
 import Footer from '../components/Footer';
-import { Translate } from '../../i18n/utils/translate';
 import Ryo from '../images/ryoyamada-cigarettes.png';
 import Asuna from '../images/asuna.png';
 import AsunaElf from '../images/asuna-elf.png';
 import Miorine from '../images/miorine.png';
 
 const MemberPage = ({ data, pageContext: { locale: language } }) => {
-  const translate = Translate('support');
-  const partners = [
+  const members = [
     {
-      name: `${translate('support.syamaguc.name')}`,
-      tier: `${translate('support.syamaguc.tier')}`,
-      title: `${translate('support.syamaguc.title')}`,
-      blurb: `${translate('support.syamaguc.blurb')}`,
+      name: `syamaguc`,
+      is_board: true,
+      title: `CEO, Founder`,
+      blurb: `Miracle cute programmer`,
       source: `${Ryo}`,
       link: '#',
     },
     {
-      name: `${translate('support.neovim.name')}`,
-      tier: `${translate('support.neovim.tier')}`,
-      title: `${translate('support.neovim.title')}`,
-      blurb: `${translate('support.neovim.blurb')}`,
+      name: `Neovim`,
+      is_board: true,
+      title: `Co-Founder`,
+      blurb: `Special thanks`,
       source: `${Miorine}`,
       link: '#',
     },
     {
-      name: `${translate('support.deepl.name')}`,
-      tier: `${translate('support.deepl.tier')}`,
-      title: `${translate('support.deepl.title')}`,
-      blurb: `${translate('support.deepl.blurb')}`,
+      name: `DeepL`,
+      is_board: false,
+      title: `Translator`,
       source: `${Asuna}`,
       link: '#',
     },
     {
-      name: `${translate('support.stablediffusion.name')}`,
-      tier: `${translate('support.stablediffusion.tier')}`,
-      title: `${translate('support.stablediffusion.title')}`,
-      blurb: `${translate('support.stablediffusion.blurb')}`,
+      name: `Chat GPT`,
+      is_board: false,
+      title: `CBO (Chief Bullshit-job Officer)`,
       source: `${Ryo}`,
       link: '#',
     },
     {
-      name: `${translate('support.chatgpt.name')}`,
-      tier: `${translate('support.chatgpt.tier')}`,
-      title: `${translate('support.chatgpt.title')}`,
-      blurb: `${translate('support.chatgpt.blurb')}`,
+      name: `Stable Diffusion`,
+      is_board: false,
+      title: `Creative Director`,
       source: `${AsunaElf}`,
       link: '#',
     },
   ];
 
-  const principalPartners = partners.filter(function (partner) {
-    return partner.tier === '1';
+  const BoardMembers = members.filter(function (partner) {
+    return partner.is_board === true;
   });
 
-  const tierFourPartners = partners.filter(function (partner) {
-    return partner.tier === '4';
+  const Members = members.filter(function (partner) {
+    return partner.is_board === false;
   });
 
   return (
     <Layout>
-      <Seo title={translate('title')} />
       <Header pageContext="{locale: language}" />
-      <PageHeader
-        title={translate('title')}
-        description={translate('description')}
-      >
+      <PageHeader title="Ourt Team" description="small group of elite">
         <div className="pb-16 bg-white dark:bg-gray-900 overflow-hidden lg:pb-24">
           <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
             <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-20 lg:items-center">
-              {principalPartners.map((partner) => (
+              {BoardMembers.map((partner) => (
                 <>
                   <div
                     className="mb-10 -mx-4 relative lg:mb-0"
@@ -101,7 +92,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
                       href={partner.link}
                       className="mt-4 inline-flex items-center justify-center px-4 py-2 border border-transparent dark:border-gray-700 rounded-md shadow-sm text-base font-medium text-cyan-500 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800"
                     >
-                      {translate('get')}
+                      more
                     </a>
                   </div>
                 </>
@@ -115,7 +106,7 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
               role="list"
               className="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8"
             >
-              {tierFourPartners.map((partner) => (
+              {Members.map((partner) => (
                 <a href={partner.link}>
                   <li key={partner.source} className="relative">
                     <div className="group block w-full rounded-lg bg-gray-100 dark:bg-gray-600 py-10 px-10">
@@ -144,3 +135,4 @@ const MemberPage = ({ data, pageContext: { locale: language } }) => {
 };
 
 export default MemberPage;
+export const Head = ({}) => <Seo title="Member" />;

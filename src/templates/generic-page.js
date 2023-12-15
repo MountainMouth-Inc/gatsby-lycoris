@@ -68,3 +68,10 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export const Head = ({ data }) => (
+  <Seo
+    title={data.markdownRemark.frontmatter.title}
+    description={data.markdownRemark.frontmatter.description}
+  />
+);

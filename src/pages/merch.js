@@ -4,42 +4,38 @@ import Seo from '../components/Seo';
 import PageHeader from '../components/PageHeader';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Translate } from '../../i18n/utils/translate';
 import Asuna from '../images/asuna.png';
 import Ryo from '../images/ryoyamada-cigarettes.png';
 import Miorine from '../images/miorine.png';
 
-const vendors = [
-  {
-    name: 'Support',
-    role: 'brabra',
-    imageUrl: Miorine,
-    link: '',
-  },
-  {
-    name: 'Sweater',
-    role: 'brabra',
-    imageUrl: Ryo,
-    link: '',
-  },
-  {
-    name: 'T-shirt',
-    role: 'brabra',
-    imageUrl: Asuna,
-    link: '',
-  },
-];
-
 const MerchPage = ({ pageContext: { locale: language } }) => {
-  const translate = Translate('merch');
+  const vendors = [
+    {
+      name: 'Support',
+      role: 'brabra',
+      imageUrl: Miorine,
+      link: '',
+    },
+    {
+      name: 'Sweater',
+      role: 'brabra',
+      imageUrl: Ryo,
+      link: '',
+    },
+    {
+      name: 'T-shirt',
+      role: 'brabra',
+      imageUrl: Asuna,
+      link: '',
+    },
+  ];
 
   return (
     <Layout>
-      <Seo title={translate('title')} />
       <Header pageContext="{locale: language}" />
       <PageHeader
-        title={translate('title')}
-        description={translate('description')}
+        title="Official Goods Store"
+        description="Work in progress..."
       >
         <div className="bg-white dark:bg-gray-900 py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -74,3 +70,4 @@ const MerchPage = ({ pageContext: { locale: language } }) => {
 };
 
 export default MerchPage;
+export const Head = ({}) => <Seo title="Merch" />;

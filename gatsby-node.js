@@ -7,7 +7,7 @@ async function paginate({ graphql, actions, type, itemPerPage }) {
     `
         {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
             filter: { frontmatter: { posttype: { eq: "${type}" } } }) {
             totalCount
           }
@@ -43,10 +43,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const genericPage = path.resolve(`./src/templates/generic-page.js`);
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: ASC }
-        limit: 1000
-      ) {
+      allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 1000) {
         edges {
           node {
             fields {

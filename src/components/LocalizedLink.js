@@ -1,5 +1,5 @@
 import React from 'react';
-import { LocalizedLink as GatsbyLink } from 'gatsby-theme-i18n';
+import { Link as GatsbyLink } from 'gatsby';
 
 const LocalizedLink = ({ children, to, language, className }) => {
   const internal = /^\/(?!\/)/.test(to);

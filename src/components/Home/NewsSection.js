@@ -1,17 +1,14 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Translate } from '../../../i18n/utils/translate';
 import LocalizedLink from '../LocalizedLink';
 
 const NewsSection = ({ pageContext: { locale: language } }) => {
-  const translate = Translate('index');
-
   return (
     <StaticQuery
       query={graphql`
         query newsSection($skip: Int! = 0) {
           allMarkdownRemark(
-            sort: { fields: [frontmatter___date], order: DESC }
+            sort: { frontmatter: { date: DESC } }
             filter: { frontmatter: { posttype: { eq: "news" } } }
             limit: 3
             skip: $skip
@@ -38,10 +35,10 @@ const NewsSection = ({ pageContext: { locale: language } }) => {
           <div className="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
             <div>
               <h2 className="text-3xl tracking-tight font-extrabold text-gray-900 dark:text-gray-50 sm:text-4xl font-display">
-                {translate('latest-news.title')}
+                News
               </h2>
               <p className="mt-3 text-xl text-gray-500 dark:text-gray-50 sm:mt-4">
-                {translate('latest-news.description')}
+                最新情報をお届けします。
               </p>
             </div>
             <div className="mt-12 grid gap-16 pt-12 lg:grid-cols-3 lg:gap-x-5 lg:gap-y-12">

@@ -8,7 +8,6 @@ import Hero from '../components/Business/Hero';
 const BusinessPage = ({ pageContext: { locale: language } }) => {
   return (
     <Layout>
-      <Seo title="Business on Mountain Mouth" />
       <Header pageContext="{locale: language}" />
       <Hero pageContext="{locale: language}" />
       <Footer pageContext="{locale: language}" />
@@ -17,3 +16,4 @@ const BusinessPage = ({ pageContext: { locale: language } }) => {
 };
 
 export default BusinessPage;
+export const Head = ({}) => <Seo title="Business" />;

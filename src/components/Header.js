@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { Popover, Transition } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
-import { Translate } from '../../i18n/utils/translate';
 import LocalizedLink from '../components/LocalizedLink';
 import DarkModeToggle from '../components/DarkModeToggle';
 
@@ -11,32 +10,27 @@ function classNames(...classes) {
 }
 
 const Header = ({ pageContext: { locale: language } }) => {
-  const translate = Translate();
   const about = [
     {
-      name: `${translate('about.about')}`,
+      name: `About`,
       href: '/about',
     },
     {
-      name: `${translate('about.business')}`,
+      name: `Solutions`,
       href: '/business',
     },
     {
-      name: `${translate('about.member')}`,
+      name: `Member`,
       href: '/member',
     },
   ];
   const link = [
     {
-      name: `${translate('link.blog')}`,
+      name: `Blog`,
       href: 'https://syamaguc.dev',
     },
     {
-      name: `${translate('link.gallery')}`,
-      href: 'https://syamaguc-diffusion.vercel.app',
-    },
-    {
-      name: `${translate('link.merch')}`,
+      name: `Merch`,
       href: '/merch',
     },
   ];
@@ -49,7 +43,7 @@ const Header = ({ pageContext: { locale: language } }) => {
             <div className="pr-16 sm:text-center sm:px-16">
               <p className="font-medium text-white">
                 <span className="hidden lg:inline">
-                  {translate('js-warning')}
+                  お使いのブラウザでは、JavaScriptが無効になっているようです。本サイトのほとんどの部分はJavaScriptを使用しなくても動作しますが、本サイトを閲覧する際に意図しない体験をする可能性があります。お使いのブラウザの設定で、当サイトの利用を例外として設定することをご検討ください。
                 </span>
               </p>
             </div>
@@ -81,7 +75,7 @@ const Header = ({ pageContext: { locale: language } }) => {
                 language={language}
                 className="text-base font-medium text-gray-500 dark:text-gray-50 hover:text-gray-900 dark:hover:text-cyan-500"
               >
-                {translate('categories.news')}
+                News
               </LocalizedLink>
 
               <Popover className="relative">
@@ -93,7 +87,7 @@ const Header = ({ pageContext: { locale: language } }) => {
                         'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
                       )}
                     >
-                      <span>{translate('categories.about')}</span>
+                      <span>About</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',
@@ -144,7 +138,7 @@ const Header = ({ pageContext: { locale: language } }) => {
                         'group bg-gray-50 dark:bg-gray-900 dark:text-gray-50 rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-cyan-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500'
                       )}
                     >
-                      <span>{translate('categories.link')}</span>
+                      <span>Links</span>
                       <ChevronDownIcon
                         className={classNames(
                           open ? 'text-gray-600' : 'text-gray-400',

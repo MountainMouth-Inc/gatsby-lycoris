@@ -1,28 +1,18 @@
 import React from 'react';
-import { Translate, Trans } from '../../../i18n/utils/translate';
-import Asuna from '../../images/txt2img-20231213-170551-0.png';
 import CodeSnippet from './CodeSnippet';
 import SolutionItem from './SolutionItem';
 
 const Hero = ({ pageContext: { locale: language } }) => {
-  const translate = Translate('solutions');
   const solutions = [
     {
-      title: `${translate('solutions.web.title')}`,
-      description: `${translate('solutions.web.description')}`,
+      title: 'Web development',
+      description:
+        'We can provide Full Stack solutions for web development, from front-end to back-end and infrastructures.',
     },
     {
-      title: `${translate('solutions.dx.title')}`,
-      description: `${translate('solutions.dx.description')}`,
-    },
-    {
-      title: `${translate('solutions.ds.title')}`,
-      description: `${translate('solutions.ds.description')}`,
-    },
-    {
-      title: `${translate('solutions.marketing.title')}`,
-      description: `${translate('solutions.marketing.description')}`,
-      source: `${Asuna}`,
+      title: 'DX Consulting',
+      description:
+        'We can provide Full Stack solutions for web development, from front-end to back-end and infrastructures.',
     },
   ];
 

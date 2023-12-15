@@ -9,7 +9,6 @@ import ShrugDark from '../images/asuna.png';
 const NotFoundPage = () => {
   return (
     <Layout>
-      <Seo title="404" />
       <Header pageContext="{locale: language}" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-400 dark:text-gray-200">
         <div className="flex dark:hidden items-center justify-center mt-20">
@@ -40,3 +39,5 @@ const NotFoundPage = () => {
 };
 
 export default NotFoundPage;
+
+export const Head = ({}) => <Seo title="404" />;
