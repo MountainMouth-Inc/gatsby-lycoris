@@ -78,10 +78,10 @@ const Hero = ({ pageContext: { locale: language } }) => {
                   株式会社MountainMouthは、LinuxとVimとBitcoinが大好きなエンジニアの会社が立ち上げた会社です。
                 </p>
                 <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
-                  どこに出しても恥かしいコードばかり書いています。
+                  どこに出しても恥ずかしいコードばかり書いています。
                 </p>
                 <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
-                  発言は全て冗談です。
+                  発言は組織を代表するものであり、全て冗談です。
                 </p>
               </div>
             </div>
