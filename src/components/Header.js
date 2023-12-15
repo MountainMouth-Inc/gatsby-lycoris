@@ -58,7 +58,7 @@ const Header = ({ pageContext: { locale: language } }) => {
               language={language}
               className="text-3xl font-extrabold text-gray-900 dark:text-gray-50 sm:text-3xl font-display"
             >
-              🏔️ Mountain Mouth Inc.
+              🏔️ Mountain Mouth
             </LocalizedLink>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
