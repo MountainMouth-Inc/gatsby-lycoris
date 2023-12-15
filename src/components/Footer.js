@@ -22,7 +22,7 @@ const Footer = ({ pageContext: { locale: language } }) => {
     ],
     links: [
       {
-        name: `CEO's blog`,
+        name: `Blog`,
         href: 'https://syamaguc.dev',
       },
       {

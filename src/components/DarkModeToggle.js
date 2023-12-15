@@ -3,34 +3,36 @@ import { Switch } from '@headlessui/react';
 
 const DarkModeToggle = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    //return true;
     if (typeof window !== 'undefined') {
       const savedMode = localStorage.getItem('darkMode');
-      return savedMode !== null ? savedMode === 'true' : true;
-    } else return true;
+      return savedMode === 'true' || savedMode === null;
+    }
+    return true;
   });
 
   useEffect(() => {
+    const className = 'dark';
+    const element = document.documentElement;
+
     if (darkMode) {
-      document.documentElement.classList.add('dark');
+      element.classList.add(className);
     } else {
-      document.documentElement.classList.remove('dark');
+      element.classList.remove(className);
     }
+
     localStorage.setItem('darkMode', darkMode);
   }, [darkMode]);
 
+  const switchClass = `relative inline-flex items-center h-6 rounded-full w-11 ${
+    darkMode ? 'bg-cyan-600' : 'bg-gray-500'
+  }`;
+  const spanClass = `inline-block w-4 h-4 transform bg-white rounded-full ${
+    darkMode ? 'translate-x-6' : 'translate-x-1'
+  }`;
+
   return (
-    <Switch
-      checked={darkMode}
-      onChange={setDarkMode}
-      className={`${darkMode ? 'bg-cyan-600' : 'bg-gray-500'}
-        text-base font-medium text-gray-500 dark:text-gray-50 hover:text-gray-900 dark:hover:text-cyan-500
-        relative inline-flex items-center h-6 rounded-full w-11`}
-    >
-      <span
-        className={`${darkMode ? 'translate-x-6' : 'translate-x-1'}
-          inline-block w-4 h-4 transform bg-white rounded-full`}
-      />
+    <Switch checked={darkMode} onChange={setDarkMode} className={switchClass}>
+      <span className={spanClass} />
     </Switch>
   );
 };

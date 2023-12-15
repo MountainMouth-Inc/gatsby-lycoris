@@ -1,13 +1,44 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import LocalizedLink from '../LocalizedLink';
 import Carousel from './Carousel';
 import HeroImage1 from '../../images/txt2img-20231213-193600-0.png';
 import HeroImage2 from '../../images/txt2img-20231213-192513-0.png';
 import HeroImage3 from '../../images/txt2img-20231213-170551-0.png';
+import TypeWriter from './TypeWriter';
 
 const Hero = ({ pageContext: { locale: language } }) => {
   const images = [HeroImage1, HeroImage2, HeroImage3];
+  const words = [
+    'Hack the World🤘',
+    'I am Silver Bullet🔫',
+    'Buy Bitcoin & HODL🤑',
+    'vim >>> VScode',
+    'Linux >>> Windows',
+  ];
+  const latest_post = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        limit: 1
+        sort: { frontmatter: { date: DESC } }
+        filter: { frontmatter: { posttype: { eq: "news" } } }
+      ) {
+        nodes {
+          fields {
+            slug
+          }
+          frontmatter {
+            date
+            description
+            posttype
+            title
+            url
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <div className="pb-8 sm:pb-12 lg:pb-12">
@@ -17,7 +48,7 @@ const Hero = ({ pageContext: { locale: language } }) => {
             <div className="mt-20">
               <div>
                 <LocalizedLink
-                  to="/new-release-2023-12-07"
+                  to={latest_post.allMarkdownRemark.nodes[0].fields.slug}
                   language={language}
                   className="inline-flex space-x-4"
                 >
@@ -26,19 +57,31 @@ const Hero = ({ pageContext: { locale: language } }) => {
                   </span>
                   <span className="inline-flex items-center text-sm font-medium text-cyan-600 space-x-1">
                     <span>
-                      New Release 2023-07-07 -
-                      法人における仮想通貨税制の改正の可能性
+                      {latest_post.allMarkdownRemark.nodes[0].frontmatter.date}
+                    </span>
+                    <span>
+                      {latest_post.allMarkdownRemark.nodes[0].frontmatter.title}
                     </span>
                     <ChevronRightIcon className="h-5 w-5" aria-hidden="true" />
                   </span>
                 </LocalizedLink>
               </div>
+
+              <div class="w-full h-full flex justify-center items-center">
+                <h1 id="typewriter" class="text-4xl font-bold"></h1>
+              </div>
               <div className="mt-6 sm:max-w-xl">
                 <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-50 tracking-tight sm:text-5xl font-display">
-                  Hack the World.
+                  <TypeWriter words={words} />
                 </h1>
                 <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
-                  株式会社MountainMouthは、LinuxとVimとBitcoinが大好きなエンジニアの会社です。
+                  株式会社MountainMouthは、LinuxとVimとBitcoinが大好きなエンジニアの会社が立ち上げた会社です。
+                </p>
+                <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
+                  どこに出しても恥かしいコードばかり書いています。
+                </p>
+                <p className="mt-6 text-xl text-gray-500 dark:text-gray-50">
+                  発言は全て冗談です。
                 </p>
               </div>
             </div>
