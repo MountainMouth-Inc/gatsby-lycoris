@@ -6,7 +6,7 @@ module.exports = {
     title: 'MountainMouth',
     // Site Description
     description: '株式会社MountainMouthのホームページ',
-    ogpImage: `${__dirname}/src/images/txt2img-20231212-193600.png`,
+    ogpImage: `src/images/txt2img-20231212-193600.png`,
   },
 
   plugins: [
