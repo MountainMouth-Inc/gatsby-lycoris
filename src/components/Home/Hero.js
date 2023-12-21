@@ -68,7 +68,7 @@ const Hero = ({ pageContext: { locale: language } }) => {
               </div>
 
               <div class="w-full h-full flex justify-center items-center">
-                <h1 id="typewriter" class="text-4xl font-bold"></h1>
+                <h2 id="typewriter" class="text-4xl font-bold"></h2>
               </div>
               <div className="mt-6 sm:max-w-xl">
                 <h1 className="text-4xl font-extrabold text-gray-900 dark:text-gray-50 tracking-tight sm:text-5xl font-display">

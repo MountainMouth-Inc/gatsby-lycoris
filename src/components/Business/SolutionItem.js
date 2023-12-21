@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SolutionItem = ({ title, description }) => {
+const SolutionItem = ({ title, description, badges }) => {
   return (
     <div className="px-6 lg:px-0 lg:pt-4">
       <div className="mx-auto max-w-2xl">
@@ -11,6 +11,7 @@ const SolutionItem = ({ title, description }) => {
           <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-200">
             {description}
           </p>
+          <p className="mt-6 text-lg leading-8">{badges}</p>
           <div className="mt-10 flex items-center gap-x-6">
             <a
               href="#"

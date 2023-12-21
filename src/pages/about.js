@@ -32,7 +32,6 @@ const AboutPage = () => {
                   Player
                   One』を観て、いつかこんな世界を創れる人になりたい、と漠然と思っていました。
                 </p>
-
                 <p>
                   26歳の時に、『ハッカーと画家』(Paul Graham)
                   を読み、そんな気持ちを思い出して起業に至ります。
@@ -40,6 +39,14 @@ const AboutPage = () => {
                 <p>
                   いつの時代も世界を変えてきたのは技術者です。Mountain
                   Mouthも技術の可能性を信じ、より良い未来を創れるような会社を目指しています。
+                </p>
+                <h2 className="text-base text-cyan-500 font-semibold tracking-wide uppercase font-display">
+                  PRIORITY
+                </h2>
+                <h3 className="dark:text-gray-50">Technology First</h3>
+                <p>
+                  よく技術は手段と言われますが、これはプライベートカンパニーなので、出来るだけ新しい技術にチャレンジしていきます。
+                  もちろん「枯れた技術の水平思考」は忘れずに。
                 </p>
                 <h3 className="dark:text-gray-50">Bitcoin Standard</h3>
                 <p>
