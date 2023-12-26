@@ -3,19 +3,19 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import LocalizedLink from '../LocalizedLink';
 import Carousel from './Carousel';
-import HeroImage1 from '../../images/txt2img-20231213-193600-0.png';
-import HeroImage2 from '../../images/txt2img-20231213-192513-0.png';
-import HeroImage3 from '../../images/txt2img-20231213-170551-0.png';
+import HeroImage1 from '../../images/wp9110431-linus-torvalds-wallpapers.jpg';
+import HeroImage2 from '../../images/wallpaperflare.com_wallpaper.jpg';
+import HeroImage3 from '../../images/wallpaperflare.com_wallpaper (1).jpg';
 import TypeWriter from './TypeWriter';
 
 const Hero = ({ pageContext: { locale: language } }) => {
   const images = [HeroImage1, HeroImage2, HeroImage3];
   const words = [
-    'Hack the World🤘',
-    'I am Silver Bullet🔫',
+    'Hack the World 🤘',
+    'No Silver Bullet 🔫',
     'Buy Bitcoin & HODL🤑',
-    'vim >>> VScode',
-    'Linux >>> Windows',
+    'Vim 💚 ',
+    'Linux 🖤 ',
   ];
   const latest_post = useStaticQuery(graphql`
     query {
