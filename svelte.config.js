@@ -1,9 +1,15 @@
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
-import adapter from "@sveltejs/adapter-netlify";
+import adapter from "@sveltejs/adapter-cloudflare";
 
 export default {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      // See below for an explanation of these options
+      routes: {
+        include: ["/*"],
+        exclude: ["<all>"],
+      },
+    }),
   },
   // Consult https://svelte.dev/docs#compile-time-svelte-preprocess
   // for more information about preprocessors
