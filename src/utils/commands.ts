@@ -14,10 +14,7 @@ export const commands: Record<
   hostname: () => hostname,
   whoami: () => "syamaguc",
   date: () => new Date().toLocaleString(),
-  vi: () => `why use vi? try 'nvim'`,
-  vim: () => `why use vim? try 'nvim'`,
-  nvim: () => `zsh command not found: nvim`,
-  emacs: () => `why use emacs? try 'nvim'`,
+  emacs: () => `why use emacs? try 'vim'`,
   echo: (args: string[]) => args.join(" "),
   sudo: (args: string[]) => {
     window.open("https://youtu.be/HdC2cB_DZok");
@@ -32,7 +29,7 @@ export const commands: Record<
 
     [Examples]:
       theme ls
-      theme set gruvboxdark
+      theme set dracula
     `;
     if (args.length === 0) {
       return usage;
@@ -40,7 +37,7 @@ export const commands: Record<
 
     switch (args[0]) {
       case "ls": {
-        let result = themes.map((t) => t.name.toLowerCase()).join(", ");
+        let result = themes.map((t) => t.name.toLowerCase()).join("\n");
         result += `You can preview all these themes here: ${packageJson.repository.url}/tree/master/docs/themes`;
 
         return result;
@@ -68,6 +65,16 @@ export const commands: Record<
       }
     }
   },
+  vim: () => {
+    window.open("https://x.com/midudev/status/1682146759974199296", "_blank");
+
+    return "I like this meme 😂";
+  },
+  blog: () => {
+    window.open(packageJson.author.blog, "_blank");
+
+    return "Opening blog...";
+  },
   repo: () => {
     window.open(packageJson.repository.url, "_blank");
 
@@ -82,11 +89,6 @@ export const commands: Record<
     window.open(`mailto:${packageJson.author.email}`);
 
     return `Opening mailto:${packageJson.author.email}...`;
-  },
-  donate: () => {
-    window.open(packageJson.funding.url, "_blank");
-
-    return "Opening donation url...";
   },
   weather: async (args: string[]) => {
     const city = args.join("+");

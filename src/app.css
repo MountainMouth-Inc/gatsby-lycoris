@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Cascadia Code";
-  src: url("/fonts/CascadiaCode.ttf");
+  //font-family: "Cascadia Code";
+  font-family: "Hack Nerd Font";
+  //src: url("/fonts/CascadiaCode.ttf");
+  src: url("/fonts/HackNerdFont-Regular.ttf");
 }
 
 * {
-  font-family: "Cascadia Code", monospace;
+  font-family: "Hack Nerd Font", monospace;
 }
 
 * {
@@ -32,4 +34,3 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-
