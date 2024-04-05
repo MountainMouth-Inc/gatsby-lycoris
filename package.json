@@ -1,43 +1,38 @@
 {
-  "name": "mountainmouth.xyz",
-  "version": "1.0.0",
+  "name": "terminal",
   "private": true,
-  "description": "mountainmouth.xyz",
-  "author": "syamaguc",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "syamaguc",
+    "url": "https://mountainmouth.xyz",
+    "email": "shintaro@mountainmouth.xyz"
   },
-  "dependencies": {
-    "@headlessui/react": "^1.7.17",
-    "@heroicons/react": "^2.0.18",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.7",
-    "@tailwindcss/typography": "^0.5.10",
-    "gatsby": "^5.12.12",
-    "gatsby-plugin-feed": "^5.12.3",
-    "gatsby-plugin-google-gtag": "^5.12.3",
-    "gatsby-plugin-manifest": "^5.12.3",
-    "gatsby-plugin-netlify": "^5.1.1",
-    "gatsby-plugin-postcss": "^6.12.0",
-    "gatsby-plugin-robots-txt": "^1.8.0",
-    "gatsby-plugin-sharp": "^5.12.3",
-    "gatsby-plugin-sitemap": "^6.12.3",
-    "gatsby-remark-copy-linked-files": "^6.12.0",
-    "gatsby-remark-images": "^7.12.3",
-    "gatsby-remark-prismjs": "^7.12.0",
-    "gatsby-remark-responsive-iframe": "^6.12.0",
-    "gatsby-remark-smartypants": "^6.12.0",
-    "gatsby-source-filesystem": "^5.12.1",
-    "gatsby-transformer-remark": "^6.12.3",
-    "gatsby-transformer-sharp": "^5.12.3",
-    "react": "^18.2.0",
-    "tailwindcss": "^3.3.6"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MountainMouth-Inc/mountainmouth.xyz"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-netlify": "^1.0.0-next.88",
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "@tsconfig/svelte": "^5.0.2",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "svelte": "^4.2.8",
+    "svelte-check": "^3.6.2",
+    "tailwindcss": "^3.4.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.12"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   }
 }
